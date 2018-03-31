@@ -52,13 +52,9 @@ header {
     /*border: 2px solid red;*/
     margin-bottom: 40px;
 }
-.header-flex-container {
-    /*border: 2px dashed red;*/
-    margin-top: 10px;
-    margin-bottom: 40px;
-}
 nav {
     justify-content: flex-start;
+    height: 100px;
 }
 nav, .nav-wrapper {
     box-shadow: none;
@@ -71,23 +67,39 @@ nav, .nav-wrapper {
 #brand {
     /*border: 2px solid orange;*/
     display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    /*top: 10px;*/
+    /*padding-right: 40px;*/
+    /*width: 60px;*/
 }
-#nav_first_name {
+#brand-img {
+    /*display: inline-block;*/
+}
+#brand-title {
+    padding-left: 10px;
+}
+#brand-title p {
+    padding: 2px;
+    margin: 2px;
+    height: 32px;
+    line-height: 32px;
+}
+#i-wish {
     position: relative;
-    top: -5px;
-    vertical-align: sub;
     color: gray;
-    font-size: 3.3rem;
     font-weight: 300;
 }
-#nav_last_name {
+#we-had {
     position: relative;
-    vertical-align: super;
-    top: -10px;
+    color: #616161;
+    font-weight: 300;
+}
+#more-time {
+    position: relative;
     color: black;
-    font-size: 2.2rem;
-    font-weight: normal;
-    align-items: center;
+    font-weight: 300;
 }
 .nav-wrapper li a {
     font-size: 1.5rem;
@@ -163,13 +175,15 @@ main {
 /* X-LARGE SCREENS */
 @media (min-width: 992px) {
     nav {
-        margin: 20px;
-        padding-right: 60px;
+        margin: 0px 20px 40px 20px;
+        padding-right: 20px;
+    }
+    #brand-img-link {
         height: 10vh;
     }
     #brand-img {
         /*border: 2px dashed orange;*/
-        height: 8vh;
+        height: 10vh;
         width: auto;
     }
    .jumbotron {
@@ -177,7 +191,7 @@ main {
     }
     .card, .main-para {
         width: 87.5%;
-        padding: 1vw 3vw 1vw 3vw;
+        padding: 1vw 10vw 1vw 5vw;
     }
     .post img {
         width: 50vw;
@@ -193,13 +207,16 @@ main {
 /* LARGE SCREENS */
 @media (max-width: 991px) {
     nav {
-        margin: 20px 0px 20px 10px;
+        margin: 0px 20px 40px 20px;
         padding-right: 20px;
-        height: 10vh;
+        height: 100px;
+    }
+    #brand-img-link {
+        height: 12vw;
     }
     #brand-img {
         /*border: 2px dashed orange;*/
-        height: 8vw;
+        height: 12vw;
         width: auto;
     }
     .hide-on-med-and-down {
@@ -210,7 +227,7 @@ main {
     }
     .card, .main-para {
         width: 100%;
-        padding: 1vw 5vw 1vw 5vw;
+        padding: 1vw 10vw 1vw 5vw;
     }
     .post img {
         width: 75vw;
@@ -226,11 +243,18 @@ main {
 /* MEDIUM SCREENS */
 @media (max-width: 767px) {
     nav {
-        padding-right: 10px;
+        pmargin: 0px 20px 20px 20px;
+        padding-right: 20px;
+        height: 100px;
+    }
+    #brand-img-link {
+        height: 12vw;
+        max-height: 80px;
     }
     #brand-img {
         /*border: 2px dashed orange;*/
-        height: 8vw;
+        height: 12vw;
+        max-height: 80px;
         width: auto;
     }
     .modal-img {
@@ -242,11 +266,18 @@ main {
 }
 /* SMALL SCREENS */
 @media (max-width: 479px) {
-    #nav_first_name {
-        font-size: 3rem;
+    nav {
+        pmargin: 0px 20px 20px 20px;
+        padding-right: 20px;
+        height: 100px;
     }
-    #nav_last_name {
-        font-size: 2rem;
+    #brand-img-link {
+        height: 15vw;
+    }
+    #brand-img {
+        /*border: 2px dashed orange;*/
+        height: 15vw;
+        width: auto;
     }
     .modal-img {
         position: relative;
@@ -375,15 +406,14 @@ main img {
     padding-top: 10px;
 }
 .info {
-    position: relative;
-    display: inline-block;
+    position: absolute;
+    /*display: inline-block;*/
+    right: 10px;
+    margin-top: -2px;
     height: 24px;
     width: 24px;
     background-color: #616161;
     border-radius: 50%;
-    float: right;
-    top: -5px;
-    left: 25px;
 }
 .info-i {
     display: inline-block;
@@ -420,7 +450,7 @@ footer {
     vertical-align: middle;
 }
 .foot-name-link {
-    margin-right: 5px;
+    margin-right: 0;
 }
 .glyphs {
     vertical-align: middle !important;
