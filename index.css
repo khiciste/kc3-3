@@ -54,7 +54,7 @@ header {
 }
 nav {
     justify-content: flex-start;
-    height: 100px;
+    height: 110px;
 }
 nav, .nav-wrapper {
     box-shadow: none;
@@ -69,10 +69,8 @@ nav, .nav-wrapper {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.8rem;
-    /*top: 10px;*/
-    /*padding-right: 40px;*/
-    /*width: 60px;*/
+    font-size: 2rem;
+    padding-top: 10px;
 }
 #brand-img {
     /*display: inline-block;*/
@@ -81,25 +79,26 @@ nav, .nav-wrapper {
     padding-left: 10px;
 }
 #brand-title p {
+    font-weight: 300;
     padding: 2px;
     margin: 2px;
     height: 32px;
     line-height: 32px;
 }
+/* #brand div total height: 110 */
+/* set nav height to same */
 #i-wish {
     position: relative;
     color: gray;
-    font-weight: 300;
+    opacity: 0.6;
 }
 #we-had {
     position: relative;
     color: #616161;
-    font-weight: 300;
 }
 #more-time {
     position: relative;
     color: black;
-    font-weight: 300;
 }
 .nav-wrapper li a {
     font-size: 1.5rem;
@@ -209,7 +208,7 @@ main {
     nav {
         margin: 0px 20px 40px 20px;
         padding-right: 20px;
-        height: 100px;
+        height: 110px;
     }
     #brand-img-link {
         height: 12vw;
@@ -245,7 +244,7 @@ main {
     nav {
         pmargin: 0px 20px 20px 20px;
         padding-right: 20px;
-        height: 100px;
+        height: 110px;
     }
     #brand-img-link {
         height: 12vw;
@@ -269,7 +268,7 @@ main {
     nav {
         pmargin: 0px 20px 20px 20px;
         padding-right: 20px;
-        height: 100px;
+        height: 110px;
     }
     #brand-img-link {
         height: 15vw;
