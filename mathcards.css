@@ -1,0 +1,158 @@
+/* DO NOT CHANGE */
+/*
+    CSS will apply to dynamically generated cards
+*/
+
+body {
+    color: #212121;
+    font-size: 22px;
+    /*padding-right: 10px;*/
+}
+
+h1 {
+    font-size: 54px;
+}
+
+#title-link {
+    color: red !important;
+    font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
+}
+
+#title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h6 {
+    padding-left: 2px;
+}
+
+.gc_credit {
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    vertical-align: super;
+}
+
+/*a:visited {*/
+/*    color: red;*/
+/*}*/
+
+.tag {
+    background-color: #3949ab; /* indigo darken-1 */
+    color: white;
+    border-radius: 3px;
+    display: inline-block;
+    font-family: 'Work Sans', 'Roboto', sans-serif;
+    font-weight: normal;
+    text-transform: UPPERCASE;
+    padding: 6px;
+    margin: 4px 4px;
+    box-shadow: 2px 2px 2px #888888;
+    width: auto;
+}
+.tag:hover {
+    background-color: #3d5afe;
+}
+.tag.course {
+    color:white;
+    background-color: #7b1fa2; /* purple accent-3 */
+}
+.tag.course:hover {
+    background-color: #d500f9;
+}
+
+.all {
+    font-weight: bold;
+}
+.cards {
+    width: 100%;
+}
+.card {
+    /*width: 700px;*/
+    height: 600px;
+    border: 1px solid #757575;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 5px 5px 3px #888888;
+}
+.card-title, .subtitle {
+    text-transform: UPPERCASE;
+}
+.card-title, .subtitle, .desc {
+    font-family: 'Work Sans', 'Open Sans', sans-serif;
+}
+.subtitle {
+    display: block;
+    margin-bottom: 15px;
+}
+.image {
+    position: absolute;
+    margin-top: 30px;
+    right: 20px;
+}
+
+
+/* CARD SIZES ====================================== */
+/* X-LARGE SCREENS AND UP */
+@media (min-width: 992px) {
+  .card {
+    width: 700px;
+  }
+  img {
+    width: 400px;
+    height: auto;
+  }
+}
+/* LARGE SCREENS AND DOWN */
+@media (max-width: 991px) {
+  .card {
+    width: 500px;
+  }
+  img {
+    width: 250px;
+    height: auto;
+  }
+}/* MEDIUM SCREENS AND DOWN */
+@media (max-width: 767px) {
+  .card {
+    width: 600px;
+  }
+  img {
+    width: 300px;
+    height: auto;
+  }
+  span {
+    font-size: 18px;
+  }
+}
+/* SMALL SCREENS */
+@media (max-width: 479px) {
+  .card {
+    width: 350px;
+    max-height: 700px;
+  }
+  img {
+    width: 225px;
+    height: auto;
+  }
+}
+
+.tags span {
+    width: 300px;
+}
+
+.createdby {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+}
+
+.subtitle {
+    font-size: 18px;
+}

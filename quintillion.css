@@ -1,0 +1,91 @@
+/* USER'S LUCKY NUMBERS */
+.flex-row {
+    /*border: 2px solid green;*/
+    display: flex;
+    flex-direction: row;
+    flex: no-wrap;
+    justify-content: flex-start;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.lucky-col {
+    /*border: 2px dashed green;*/
+    width: 9vw;
+    height: 3vw;
+    padding: 0;   
+    /*margin-right: 2vw;*/
+}
+.luckyNumbers {
+    /*border: 2px solid orange;*/
+    margin-bottom: 0;
+}
+input {
+    width: 10vw;
+    font-size: 1.2rem !important;
+    text-align: center;
+}
+
+/* WINNING LOTTO BALLS */
+.lotto-row {
+    align-items: center;
+    justify-content: space-evenly;
+}
+.lotto-col {
+    /*border: 2px solid red;*/
+    position: relative;
+    width: 10vw;
+    height: 10vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    padding: 0;
+}
+.lotto-ball {
+    /*border: 2px dashed red;*/
+    position: absolute;
+    background: white;
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%;
+    font-size: 3.5vw;
+    color: black;
+    line-height: 275%;
+    box-shadow: 3px 3px 3px #ccbfbf;
+}
+#playButtonDiv {
+    /*border: 2px solid red;*/
+    display: flex;
+    justify-content: space-evenly;
+}
+#playButton {
+    /*position: relative;*/
+    display: inline-block; 
+    font-family: 'Work Sans', 'Roboto', 'Open Sans', sans-serif;
+    box-sizing: content-box;
+    font-size: 1.2rem;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: white;
+}
+.button-icon {
+    color: white;
+}
+.results-row {
+    text-transform: uppercase;
+}
+.resultsSpan {
+    color: #0f9d58;
+}
+.calcImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 240px;
+}
+.bigNumber {
+    font-size: 3rem;
+    text-align: center;
+}
+.repeating {
+    text-decoration: overline;
+}

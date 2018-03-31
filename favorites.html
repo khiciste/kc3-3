@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+	<!-- KEVINCLELAND.COM v3.0 -->
+	<!-- https://www.thinkful.com/learn/a-guide-to-using-github-pages/start/existing-project/user-page/ -->
+	<!-- http://blog.teamtreehouse.com/using-github-pages-to-host-your-website -->
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	
+	<!-- GOOGLE WEB FONTS -->
+	  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Cutive|Cutive+Mono" rel="stylesheet">
+	  
+	<!-- MATERIALIZE CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css">
+      <!-- ICONS -->
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+	
+	<!-- CUSTOM STYLESHEETS -->
+	  <link rel="stylesheet" href="index.css">
+
+	<title>kc3</title>
+
+</head>
+
+<body id="body">
+
+<div class="container">
+
+  <header>
+  <nav>
+    <div class="nav-wrapper">
+      <!-- BRAND -->
+      <a class="left brand-logo navbar-brand" href="index.html">
+        <div id="brand">
+            <img class="circular" id="brand-img" src="Trata_1_Cropped.jpg" />
+            <span id="nav_first_name">KEVIN</span><span id="nav_last_name">CLELAND.</span>
+        </div>
+      </a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <!-- LARGE DISPLAYS -->
+      <ul class="right hide-on-med-and-down">
+        <li role="presentation"><a href="about.html">ABOUT</a></li>
+        <li role="presentation"><a href="favorites.html">FAVORITES</a></li>
+        <li role="presentation"><a href="quotes.html">QUOTES</a></li>
+        <li role="presentation"><a href="mathcards.html">MATHCARDS</a></li>
+        <!--<li role="presentation"><a href="games.html">GAMES</a></li>-->
+        <!--<li role="presentation"><a href="contact.html">CONTACT</a></li>-->
+      </ul>
+      <!-- med & down -->
+      <ul class="sidenav" id="mobile-demo">
+        <li>
+          <div class="user-view">
+            <div class="background">
+              <img src="before-i-die.jpg">
+            </div>
+          <a href="index.html"><img class="circle" src="Trata_1_Cropped.jpg"></a>
+          <a href="index.html"><span class="white-text name">KEVIN CLELAND</span></a>
+          <a href="mailto:kevin.cleland@gmail.com"><span class="white-text email">KEVIN.CLELAND@GMAIL.COM</span></a>
+          </div>
+        </li>
+        <li><a class="sidenav-close" href="#!"><i class="right material-icons">close</i></a></li>
+        <li role="presentation"><a href="about.html">ABOUT</a></li>
+        <li role="presentation"><a href="favorites.html">FAVORITES</a></li>
+        <li role="presentation"><a href="quotes.html">QUOTES</a></li>
+        <li role="presentation"><a href="mathcards.html">MATHCARDS</a></li>
+        <li role="presentation"><a href="quintillion.html">QUINTILLION</a></li>
+        <li role="presentation"><a href="random-name.html">RANDOM NAME</a></li>
+        <!--<li role="presentation"><a href="games.html">GAMES</a></li>-->
+        <!--<li role="presentation"><a href="contact.html">CONTACT</a></li>-->
+      </ul>
+    </div>
+  </nav>
+
+  </header>
+  
+  <!-- TO TOP FLOATING BUTTON -->
+  <div class="fixed-action-btn">
+    <a href="#body" id="to-top-button" class="btn-floating waves-effect right btn-large">
+      <i class="material-icons">keyboard_arrow_up</i>
+    </a>
+  </div>
+    
+  <main>
+  <div class="main-flex-container">
+    
+    <!-- JUMBOTRON --> 
+    <div class="jumbotron card">
+      <div class="review row">
+        <h1 class="marker">FAVORITES.</h1>
+        <p class="cutive-mono bold">
+          I like to read. A lot. 
+          Here are some of my favorites and some reasons why.
+        </p>
+      </div>
+    </div>
+    
+    <!-- TAGS -->
+    <div class="row tag-row work-sans">
+      <a id="all" class="tag grey darken-2 waves-effect waves-light btn">ALL</a>
+      <a id="non-fiction" class="tag grey darken-2 waves-effect waves-light btn">NON-FICTION</a>
+      <a id="fiction" class="tag grey darken-2 waves-effect waves-light btn">FICTION</a>
+      <a id="science" class="tag grey darken-2 waves-effect waves-light btn">SCIENCE</a>
+      <a id="psychology" class="tag grey darken-2 waves-effect waves-light btn">PSYCHOLOGY</a>
+      <a id="economics" class="tag grey darken-2 waves-effect waves-light btn">ECONOMICS</a>
+    </div>
+      
+    <!-- POSTS -->
+      <!-- note: all posts must have classes for each filter tag -->
+    <!-- DEATH BY BLACK HOLE -->
+    <div class="post card cutive-mono bold non-fiction science">
+        <div class="review row">
+          <div class="col s12 l9">
+            <h2 class="title">DEATH BY BLACK HOLE</h2>
+          </div>
+          <div class="col s12 l3 center-align right">
+            <a class="book-link" href="https://www.amazon.com/Death-Black-Hole-Cosmic-Quandaries/dp/039335038X">
+              <img class="book-img" src="death-by-black-hole.jpg"/>
+            </a>
+          </div>
+          <div class="col s12 l9">
+            <a class="author-link" href="http://www.haydenplanetarium.org/tyson/">
+              <h5 class="author">Neil deGrasse Tyson</h5>
+            </a>
+              <p>
+                This is one of the greatest books I've ever read about space. 
+                Death by Black Hole by Neil deGrasse Tyson is a collection of 
+                approximately 40 essays by the world-reknowned astrophysicist. 
+                Just how big is a billion? It would take you almost 32 years 
+                to count to 1 billion without a single break to eat, sleep, 
+                or check your phone&mdash;and that's assuming you can read 
+                a number a second!
+              </p>
+              <p>
+                Did you know you are made of stardust? It's true. 
+                In fact, nearly everything in the known universe was created 
+                in the core of a star and was born into the unviverse 
+                when that star went supernova&mdash;the technical term 
+                for when a star explodes. 
+              </p>
+              <p>
+                <!-- stardust modal trigger -->
+                <a class="review waves-effect waves-light black btn modal-trigger" href="#stardust-modal">
+                  QUOTE
+                </a>
+              </p>
+              <p>
+                Click the button below for the answer to the title question: 
+                How do you die if you're sucked into a black hole? 
+              </p>
+          </div>
+          <div class="col s10 l3 left-align extra-col"></div>
+          <div class="col s10 left left-align extra-col">
+            <!-- spaghettification -->
+            <a id="black-hole-btn" class="review waves-effect waves-light btn black">
+              DEATH BY...
+            </a>
+          </div>
+          <div class="col s10 l4 left-align extra-col">
+            <p id="black-hole-spoiler" class="hidden">SPAGHETTIFICATION!</p>
+          </div>
+        </div><!-- close row -->
+    </div>
+      <!-- stardust modal -->
+      <div id="stardust-modal" class="modal">
+        <div class="modal-content review">
+          <h3>WE ARE STARDUST</h3>
+          <p class="cutive-mono bold">
+            “The atoms of our bodies are traceable to stars that manufactured 
+            them in their cores and exploded these enriched ingredients across 
+            our galaxy, billions of years ago. For this reason, we are 
+            biologically connected to every other living thing in the world. 
+            We are chemically connected to all molecules on Earth. And we are 
+            atomically connected to all atoms in the universe. We are not 
+            figuratively, but literally stardust.”
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="work-sans modal-action modal-close waves-effect waves-black btn-flat">CLOSE</a>
+        </div>
+      </div>
+    
+    <!-- MINDSET -->
+    <div id="mindset-card" class="post card cutive-mono bold non-fiction psychology">
+        <div class="review row">
+          <div class="col s12 l9">
+            <h2 class="title">MINDSET</h2>
+          </div>
+          <div class="col s12 l3 center-align right">
+            <a class="author-link" class="book-link" href="https://www.amazon.com/Mindset-Psychology-Carol-S-Dweck/dp/0345472322">
+              <img class="book-img" src="mindset.jpg"/>
+            </a>
+          </div>
+          <div class="col s12 l9">
+            <a href="https://mindsetonline.com/whatisit/about/">
+              <h5 class="author">Carol S. Dweck, Ph.D.</h5>
+            </a>
+            <p>
+              What's the difference between a fixed mindset and a growth mindset? 
+              Having a fixed mindset means believing that you were born with  
+              limited abilities and a finite intelligence&ndash;that you'll 
+              never get any smarter no matter what you do.
+              Having a growth mindset means that you understand that the brain 
+              is a muscle and that just like any muscle, it grows stronger 
+              through struggle and challenge. 
+              According to Dweck's extensive research, an individual's mindset 
+              can have a profound effect on their success and happiness in life. 
+            </p>
+          </div>
+          <div class="col s10 l3 left-align extra-col"></div>
+          <div class="col s10 left left-align extra-col"></div>
+          <div class="col s4 center-align extra-col"></div>
+        </div><!-- close row -->
+    </div>
+    
+    <!-- THE GRAPES OF WRATH -->
+    <div class="post card special-elite fiction economics">
+      <div class="review row">
+        <div class="col s12 l9">
+          <h2>THE GRAPES OF WRATH</h2>
+        </div>
+        <div class="col s12 l3 center-align right">
+          <a class="book-link" href="https://www.amazon.com/Grapes-Wrath-John-Steinbeck/dp/0143039431">
+            <img class="book-img" src="the-grapes-of-wrath.jpg"/>
+          </a>
+        </div>
+        <div class="col s12 l9">
+          <a class="author-link" href="http://www.steinbeck.org/">
+            <h5 class="author">John Steinbeck</h5>
+          </a>
+            <p>
+              This is one of the greatest books about America I've ever read. 
+              The Grapes of Wrath by John Steinbeck 
+              takes the reader into the world of American farmers at a
+              turning point in American history: the collision of the 
+              the Dust Bowl, the Great Depression, and the mechanization
+              of the agricultural industry. Forced off their land by big 
+              banks and corporate greed, desperate to earn an honest living, 
+              the Joad family sees no other choice but to head west in 
+              search of work. What they find will give pause to even the 
+              most heartless among us. 
+            </p>
+        </div>
+        <div class="col s10 l3 left-align extra-col"></div>
+        <div class="col s10 left left-align extra-col"></div>
+        <div class="col s4 center-align extra-col"></div>
+      </div><!-- close row -->
+    </div>
+    
+    <!-- A SHORT HISTORY OF NEARLY EVERYTHING -->
+    <div class="post card cutive-mono bold non-fiction science">
+      <div class="review row">
+        <div class="col s12 l9">
+          <h2 class="title">A SHORT HISTORY OF NEARLY EVERYTHING</h2>
+        </div>
+        <div class="col s12 l3 center-align right">
+          <a class="book-link" href="https://www.amazon.com/Short-History-Nearly-Everything-ebook/dp/B000FBFNII">
+            <img class="book-img" src="a-short-history-of-nearly-everything.jpg"/>
+          </a>
+        </div>
+        <div class="col s12 l9">
+          <a class="author-link" href="https://en.wikipedia.org/wiki/Bill_Bryson">
+            <h5 class="author">Bill Bryson</h5>
+          </a>
+            <p>
+              Bill Bryson tells the (scientific) history of the planet, 
+              from the Big Bang to now. My favorite part of the book answers 
+              the one question we all asked ourselves while gazing up at the 
+              stars: Is there life out there? 
+            </p>
+            <p>
+              “Still, statistically the probability that there are other 
+              thinking beings out there is good… Under Drake’s equation 
+              you divide the number of stars in a selected portion of the 
+              universe by the number of stars that are likely to have 
+              planetary systems; divide that by the number of planetary 
+              systems that could theoretically support life; divide that 
+              by the number on which life, having arisen, advances to a 
+              state of intelligence; and so on. At each such division, 
+              the number shrinks colossally—yet even with the most 
+              conservative inputs the number of advanced civilizations 
+              just in the Milky Way always works out to be somewhere in 
+              the millions.”
+            </p>
+        </div>
+        <div class="col s10 l3 left-align extra-col"></div>
+        <div class="col s10 left left-align extra-col"></div>
+        <div class="col s4 center-align extra-col"></div>
+      </div><!-- close row -->
+    </div>
+    
+    <!-- PREDICTABLY IRRATIONAL -->
+    <div class="post card cutive-mono bold non-fiction psychology economics">
+      <div class="review row">
+        <div class="col s12 l9">
+          <h2 class="title">PREDICTABLY IRRATIONAL</h2>
+        </div>
+        <div class="col s12 l3 center-align right">
+          <a class="book-link" href="https://www.amazon.com/Predictably-Irrational-Revised-Expanded-Decisions/dp/0061353248">
+            <img class="book-img" src="predictably-irrational.jpg"/>
+          </a>
+        </div>
+        <div class="col s12 l9">
+          <a class="author-link" href="http://danariely.com/">
+            <h5 class="author">Dan Airely</h5>
+          </a>
+            <p>
+              This book introduced me to the field I believe will shape 
+              the future more than any other: behavorial economics. 
+              Dan Airely expertly explains the science of how we make 
+              decisions. 
+            </p>
+            <p>
+              Why do our headaches persist after we take a one-cent aspirin 
+              but disappear when we take a fifty-cent aspirin? 
+            </p>
+            <p>
+              Why do we splurge on a lavish meal but cut coupons to save 
+              twenty-five cents on a can of soup?
+            </p>
+            <p>
+              The answer is that humans are <span class="bold">predictably irrational</span>.
+            </p>
+        </div>
+        <div class="col s10 l3 left-align extra-col"></div>
+        <div class="col s10 left left-align extra-col"></div>
+        <div class="col s4 center-align extra-col"></div>
+      </div><!-- close row -->
+    </div>
+    
+    <!-- OUTLIERS -->
+    <div class="post card cutive-mono bold non-fiction psychology economics">
+      <div class="review row">
+        <div class="col s12 l9">
+          <h2 class="title">OUTLIERS</h2>
+        </div>
+        <div class="col s12 l3 center-align right">
+          <a class="book-link" href="https://www.amazon.com/Outliers-Story-Success-Malcolm-Gladwell/dp/0316017930">
+            <img class="book-img" src="outliers.jpg"/>
+          </a>
+        </div>
+        <div class="col s12 l9">
+          <a class="author-link" href="https://en.wikipedia.org/wiki/Malcolm_Gladwell">
+            <h5 class="author">Malcolm Gladwell</h5>
+          </a>
+            <p>
+              This is the book that started it all for me.  
+              Malcom Gladwell's deep dive into the lives and experiences 
+              of humans at the top of their fields opened the flood gates 
+              and I haven't stopped reading since. 
+            </p>
+            <p>
+              Ever think that some people are just born great? 
+              What do Michael Jordan, Wayne Gretzky, Muhammad Ali,
+              Bill Gates, Albert Einstein, Elon Musk, John Rockefeller  
+              Andrew Carnegie, and The Beatles all have in common? 
+            </p>
+            <p>
+              The answer may surprise you. None of them claim to be born 
+              with it. Instead, Gladwell discovered that everyone he 
+              interviewed&mdash;from elite athletes to prodigies 
+              to titans of industry to rock 'n' roll gods&mdash;had 
+              put in at least 10,000 hours of practice. 
+            </p>
+            <p>
+              In perhaps my favorite chapter, Gladwell dispells the myth that 
+              Asian children are simply born better at math than the rest of 
+              us puny humans by explaining that a few simple factors have 
+              given them a leg up and more importantly, what we can learn 
+              from them. 
+            </p>
+            <p>
+              <!-- factors trigger -->
+              <a class="review waves-effect waves-light indigo darken-4 btn modal-trigger" href="#factors-modal">
+                WHAT FACTORS?
+              </a>
+            </p>
+        </div>
+        <div class="col s10 l3 left-align extra-col"></div>
+        <div class="col s10 left left-align extra-col"></div>
+        <div class="col s4 center-align extra-col"><!-- BOTTOM RIGHT --></div>
+      </div><!-- close row -->
+    </div>
+      <!-- factors modal -->
+      <div id="factors-modal" class="modal">
+        <div class="modal-content review">
+          <h3>WHAT FACTORS, YOU ASK?</h3>
+          <p class="cutive-mono bold">
+            <ul id="outliers-factors" class="browser-default square-bulleted cutive-mono bold">
+              <li>Mandarin has a number system that is logical and much easier to learn at a young age</li>
+                <ul class="sub-list browser-default">
+                  <li>11 is "ten, one"</li>
+                  <li>12 is "ten, two"</li>
+                  <li>24 is "two tens, four"</li>
+                </ul>
+              <li>It also has <span class="italics">shorter</span> numbers (shorter to read, easier to learn)</li>
+              <li>As a result, the average four year old child in China can count to 40...</li>
+              <li>Whereas the average American four year old can only count to 15!</li>
+              <li>Lastly, as the title of the chapter "Rice Paddies and Math Tests" suggests,
+              these kids grow up in a culture that values grit, hard work, and persistence</li>
+                <ul class="sub-list browser-default">
+                  <li>Essentially, they grow up with the <a href="#mindset-card">growth mindset</a></li>
+                </ul>
+            </ul>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="work-sans modal-action modal-close waves-effect waves-black btn-flat">CLOSE</a>
+        </div>
+      </div>
+    
+    <!-- BRAIN RULES -->
+    <div class="post card cutive-mono bold non-fiction psychology economics">
+      <div class="review row">
+        <div class="col s12 l9">
+          <h2 class="title">BRAIN RULES</h2>
+        </div>
+        <div class="col s12 l3 center-align right">
+          <a class="book-link" href="https://www.amazon.com/Brain-Rules-Principles-Surviving-Thriving/dp/0979777720">
+            <img class="book-img" src="brain-rules.jpg"/>
+          </a>
+        </div>
+        <div class="col s12 l9">
+          <a class="author-link" href="http://www.brainrules.net/">
+            <h5 class="author">John Medina</h5>
+          </a>
+            <p>
+              We don't know much about the human brain. But what we do 
+              know can and should have a profound impact on the way we 
+              live our lives. Molecular biologist John Medina lays out 
+              12 rules for surviving and thriving in the world today.
+            </p>
+            <p>
+              How important is sleep? So much so that Medina actually advocates 
+              for daily naptime&mdash;even for adults! 
+            </p>
+            <p>
+              Did you know that early humans moved up to 12 miles a day! Our 
+              brains evolved to learn on the fly&mdash;so get up, get movin',
+              and your brain will thank you! 
+            </p>
+            <p>
+              <!-- factors trigger -->
+              <a class="review waves-effect waves-light red darken-4 btn modal-trigger" href="#insights-modal">
+                INSIGHTS
+              </a>
+            </p>
+        </div>
+        <div class="col s10 l3 left-align extra-col"></div>
+        <div class="col s10 left left-align extra-col"></div>
+        <div class="col s4 center-align extra-col"><!-- BOTTOM RIGHT --></div>
+      </div><!-- close row -->
+    </div>
+      <!-- factors modal -->
+      <div id="insights-modal" class="modal">
+        <div class="modal-content review">
+          <h3>INSIGHTS, FOR YOUR BRAIN HEALTH!</h3>
+          <p id="brain-rules-insights" class="browser-default square-bulleted cutive-mono bold">
+            Get your pencil moving!
+            Studies show that this simple step activates more of your brain 
+            than sitting still and concentrating with all your 
+            might&mdash;adding all new meaning to the phrase 
+            "learn by doing!"  
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="work-sans modal-action modal-close waves-effect waves-black btn-flat">CLOSE</a>
+        </div>
+      </div>
+    
+    <!-- template -->
+    <!-- TITLE -->
+    <!--<div class="post card non-fiction cutive-mono bold">-->
+    <!--  <div class="review row">-->
+    <!--    <div class="col s12 l9">-->
+    <!--      <h2 class="title">TITLE</h2>-->
+    <!--    </div>-->
+    <!--    <div class="col s12 l3 center-align right">-->
+    <!--      <a class="book-link" href="">-->
+    <!--        <img class="book-img" src=""/>-->
+    <!--      </a>-->
+    <!--    </div>-->
+    <!--    <div class="col s12 l9">-->
+    <!--      <a class="author-link" href="">-->
+    <!--        <h5 class="author">Author</h5>-->
+    <!--      </a>-->
+    <!--        <p>-->
+    <!--          Description...-->
+    <!--        </p>-->
+    <!--        <p>-->
+    <!--          Description continued...-->
+    <!--        </p>-->
+    <!--    </div>-->
+    <!--    <div class="col s10 l3 left-align extra-col" > UNDER IMAGE </div>-->
+    <!--    <div class="col s10 left left-align extra-col" > BOTTOM LEFT </div>-->
+    <!--    <div class="col s4 center-align extra-col" > BOTTOM RIGHT </div>-->
+    <!--  </div><!-- close row -->
+    <!--</div>-->
+      
+  </div><!-- CLOSE MAIN-FLEX-CONTAINER -->
+  </main>
+
+  <footer>
+    <div class="footer-flex-container">
+    <br />
+    <br />
+    <br />
+    
+    <!-- kc footer -->
+    <p class="footer-credit">site design by 
+      <a class="foot-name-link" href="https://kevincleland.com/about.html">
+        kevin cleland
+      </a>
+      <a href="https://instagram.com/goforth_andprosper/">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://open.spotify.com/user/1245748701/playlist/0Kr3hSg0stBIbb7Gbq8qNt">
+        <i class="fab fa-spotify"></i>
+      </a>
+      <!--<a href="https://www.linkedin.com/in/kevin-cleland-9283b736">-->
+        <!--<img class="glyphs" src="glyphs/linkedin.png">-->
+      <!--</a>-->
+    </p>
+    
+    <br />
+    
+  </div>
+  </footer>
+
+</div> <!-- CLOSE CONTAINER -->
+
+</body>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- MATERIALIZE JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
+<!-- CUSTOM JS -->
+<script src="index.js"></script>
+<script src="favorites.js"></script>
+
+</html>

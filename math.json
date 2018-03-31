@@ -1,0 +1,645 @@
+{
+	"cards": [
+		{
+			"title": "Lines",
+			"subtitle": "parallel, perpendicular, neither",
+			"desc": "Parallel lines never intersect, perpendicular lines intersect at 90&#176;, all other lines intersect at some other angle",
+			"img": "math-img/parallel-perpendicular-neither.png",
+			"tags": ["algebra-1", "geometry", "algebra-2", "alg1-u1", "alg1-u2", "alg1-u3", "alg1-u4", "lines", "linear", "intersection", "right angles"],
+			"created": "Maroon, Lauren, Ryan, Tony"
+		},
+		{
+			"title": "Intersecting Lines",
+			"subtitle": "Neither parallel nor perpendicular",
+			"desc": "Lines that intersect that are not parallel or perpendicular are considered neither or simply intersecting",
+			"img": "math-img/inter.png",
+			"tags": ["algebra-1", "geometry", "algebra-2", "alg1-u1", "alg1-u2", "alg1-u3", "alg1-u4", "lines", "linear", "intersection"],
+			"created": "Tony"
+		},
+		{
+			"title": "Correlation coefficient",
+			"subtitle": "Doesn't necessarily indicate causation!",
+			"desc": "A number between −1 and +1 calculated so as to represent the linear dependence of two variables or sets of data. Numbers closer to each extreme indicate greater correlation.",
+			"img": "math-img/corr.jpg",
+			"tags": ["algebra-2", "linear"],
+			"created": "Tony"
+		},
+		{
+			"title": "Perpendicular",
+			"subtitle": "Perpendicular lines form right angles",
+			"desc": "Perpendicular lines intersect at 90&#176",
+			"img": "math-img/perpend.png",
+			"tags": ["algebra-1", "geometry", "algebra-2", "alg1-u1", "alg1-u2", "alg1-u3", "alg1-u4", "lines", "linear", "intersection", "right angles"],
+			"created": "Lauren"
+		},
+		{
+			"title": "Axis of symmetry",
+			"subtitle": "It is a vertical line with the equation of x = -b/2a.",
+			"desc": "It is the line of symmetry of a parabola and divides a parabola into two equal halves that are reflections of each other about the line of symmetry- it intersects a parabola at its vertex",
+			"img": "math-img/axis-of-symmetry.gif",
+			"tags": ["algebra-1", "geometry", "algebra-2", "alg1-u1", "alg1-u2", "alg1-u3", "alg1-u4", "lines", "linear"],
+			"created": "Lauren"
+		},
+		{
+			"title": "Parallel",
+			"subtitle": "They'll never intersect!",
+			"desc": "Parallel lines are two straight lines that continue in the same direction but never intersect.",
+			"img": "math-img/parallel.gif",
+			"tags": ["algebra-1", "geometry", "algebra-2", "alg1-u1", "alg1-u2", "alg1-u3", "alg1-u4", "lines", "linear", "intersection", "right angles"],
+			"created": "Maroon"
+		},
+		{
+			"title": "No Solution Equation",
+			"subtitle": "An equation that does not have a mathematic solution ",
+			"desc": "A no solution equation is an equation that has two sides that cannot ever be equivalent, meaning that the variable in the equation is either an imaginary number or is not feasible.",
+			"img": "math-img/solutionss.jpg",
+			"tags": ["algebra-1", "geometry", "algebra-2", "alg1-u1", "alg1-u2", "alg1-u3", "alg1-u4", "equation", "no solution", "solution", "imaginary"],
+			"created": "Maroon"
+		},
+		{
+			"title": "Circle",
+			"subtitle": "A one-sided or infinite-sided polygon?",
+			"desc": "The set of all points equidistant to a fixed point, called the center",
+			"img": "math-img/circle_ctr_radius.jpg",
+			"tags": ["geometry", "geo-u8", "shapes", "circles"],
+			"created": "Emily, John"
+		},
+		{
+			"title": "Radius",
+			"subtitle": "They're all equal",
+			"desc": "Segment (or length of the segment) from center of circle to the circle's edge",
+			"img": "math-img/radius.png",
+			"tags": ["geometry", "geo-u8", "shapes", "circles"],
+			"created": "Emily"
+		},
+		{
+			"title": "Circumference",
+			"subtitle": "2&pi;(r) for the win!",
+			"desc": "Distance around a circle. C = 2r(&pi;) or C = d(&pi;)",
+			"img": "math-img/circumfrence.png",
+			"tags": ["geometry", "geo-u8", "shapes", "circles"],
+			"created": "John"
+		},
+		{
+			"title": "Area of a circle",
+			"subtitle": "think inside the circle.",
+			"desc": "Amount of plane space within the boundary of the circle. A = r<sup>2</sup>(&pi;)",
+			"img": "math-img/areacircle.gif",
+			"tags": ["geometry", "geo-u8", "shapes", "circles", "formulas"],
+			"created": "Emily"
+		},
+		{
+			"title": "Acute triangles",
+			"subtitle": "... are cute",
+			"desc": "All three angles in a triangle measure less than 90&#176;",
+			"img": "math-img/acute_triangle.png",
+			"tags": ["geometry", "shapes", "triangles"],
+			"created": "James"
+		},
+		{
+			"title": "Obtuse triangles",
+			"subtitle": "... are obese (no offense!)",
+			"desc": "One angle in a triangle measures greater than 90&#176;",
+			"img": "math-img/obtuse_triangle.png",
+			"tags": ["geometry", "shapes", "triangles"],
+			"created": "James"
+		},
+		{
+			"title": "Right triangles",
+			"subtitle": "... can sit upright!",
+			"desc": "One angle in a triangle measures 90&#176;",
+			"img": "math-img/right_triangle.GIF",
+			"tags": ["geometry", "shapes", "triangles"],
+			"created": "James"
+		},
+		{
+			"title": "Central angle",
+			"subtitle": "a central angle equals its arc.",
+			"desc": "An angle whose vertex is the center of a circle and sides are radii.",
+			"img": "math-img/centralangle.png",
+			"tags": ["geometry", "geo-u8", "shapes", "circles"],
+			"created": "John"
+		},
+		{
+			"title": "Equilateral triangles",
+			"subtitle": "a 'regular' triangle",
+			"desc": "A three-sided figure with all sides congruent and angles congruent",
+			"img": "math-img/triangle.png",
+			"tags": ["triangles", "shapes", "geometry"],
+			"created": "Dustin and Andy"
+		},
+		{
+			"title": "Vertical angles",
+			"subtitle": "... are always congruent to one another",
+			"desc": "Each of the pairs of opposite angles made by two intersecting lines",
+			"img": "math-img/vertical-angle.gif",
+			"tags": ["angles", "lines", "geometry"],
+			"created": "Andy"
+		},
+		{
+			"title": "Line of best fit",
+			"subtitle": "'The best fitting line' for a set of data",
+			"desc": " Straight line that best represents the data on a scatter plot",
+			"img": "math-img/line-of-best-fit.gif",
+			"tags": ["graphs", "lines", "geometry", "correlation"],
+			"created": "Andy"
+		},
+		{
+			"title": "Perimeter",
+			"subtitle": "Triangles, Quadrilaterals, Polygons",
+			"desc": "The continuous line forming the boundary of a closed geometric figure. To find perimeter you have to add up the lengths of all sides of the polygon.",
+			"img": "math-img/perimeter2.gif",
+			"tags": ["algebra-1", "geometry", "algebra-2", "alg1-u1", "alg1-u2", "alg1-u3", "alg1-u4", "perimeter", "polygons"],
+			"created": "Zane and Matt"
+		},
+		{
+			"title": "Pythagorean theorem",
+			"subtitle": "a&sup2 + b&sup2 = c&sup2",
+			"desc": "The equation which determines the relation between the side lengths of a right triangle.",
+			"img": "math-img/pythagoreantheorem.gif",
+			"tags": ["geometry", "triangles", "shapes", "right triangles"],
+			"created": "James, Jonah, Tyler"
+		},
+		{
+			"title": "Area of a trapezoid",
+			"subtitle": "amount of space a 2-D object takes up",
+			"desc": "(base<sub>1</sub> + base<sub>2</sub>)/2)(height)",
+			"img": "math-img/trapezoidar.jpg",
+			"tags": ["geometry", "area", "shapes", "formulas", "trapezoids", "quadrilaterals"],
+			"created": "Roberto"
+		}, 
+		{
+			"title": "Area of a parallelogram",
+			"subtitle": "amount of space a 2-D object takes up",
+			"desc": "base * height",
+			"img": "math-img/parallelogramarea.png",
+			"tags": ["geometry", "area", "formulas", "shapes", "parallelogram", "quadrilaterals"],
+			"created": "Roberto"
+		},
+		{
+			"title": "Area of a rhombus",
+			"subtitle": "amount of space a 2-D object takes up",
+			"desc": "base*height or (diagonal<sub>1</sub> * diagonal<sub>2</sub>)/2",
+			"img": "math-img/rhombusar.png",
+			"tags": ["geometry", "area", "formulas", "shapes", "rhombus", "quadrilaterals"],
+			"created": "Roberto"
+		},
+		{
+			"title": "Squares",
+			"subtitle": "A special member of the quadrilateral family",
+			"desc": "A four-sided plane (2D) figure with four equal sides with four right angles",
+			"img": "math-img/squares.jpg",
+			"tags": ["geometry", "geo-u1", "geo-u7", "shapes", "quadrilaterals"],
+			"created": "Ashley"
+		},
+		{
+			"title": "Parallelogram",
+			"subtitle": "a special member of the quadrilateral family",
+			"desc": "A four-sided plane (2D) figure with both pairs of opposite sides parallel and congruent",
+			"img": "math-img/parallelograms.png",
+			"tags": ["geometry", "geo-u1", "geo-u7", "shapes", "quadrilaterals", "parallel"],
+			"created": "Ashley"
+		},
+		{
+			"title": "Area of a square",
+			"subtitle": "Base & height must be perpendicular to one another",
+			"desc": "Area = base*height",
+			"img": "math-img/square.jpg",
+			"tags": ["geometry", "squares", "formulas", "area"],
+			"created": "Travis"
+		},
+		{
+			"title": "Angle sum of a triangle",
+			"subtitle": "The three angles of a triangle add to 180&#176;",
+			"desc": "In a Euclidean space, the sum of measures of these three angles of any triangle is invariably equal to the straight angle, also expressed as 180°, π radians, two right angles, or a half-turn..",
+			"img": "math-img/triangles.jpg",
+			"tags": ["triangles", "geometry"],
+			"created": "Dominic and Brady"
+		},
+		{
+			"title": "Other Polygons",
+			"subtitle": "pentagons, hexagons, septagons(heptagon), etc",
+			"desc": "pentagons = 5 sides, hexagons = 6 sides, septagons/heptagon = 7 sides, octagon = 8 sides, nonagon = 9 sides, Decagon = 10 sides, Hendegon = 11 sides, Dodecagon = 12 sides.",
+			"img": "math-img/otherpolygons.jpg",
+			"tags": ["polygons", "geometry", "shapes"],
+			"created": "Dominic"
+		},
+		{
+			"title": "Area of a rectangle",
+			"subtitle": "amount of space a 2-D object takes up",
+			"desc": "Area = base*height or length*width",
+			"img": "math-img/Erectangle.jpg",
+			"tags": ["geometry",  "formulas", "rectangles", "area"],
+			"created": "Jaiden"
+		},
+		{
+			"title": "Rhombi",
+			"subtitle": "a four sided shape with all four side congruent",
+			"desc": "Rhombus: A parallelogram with opposite equal acute angles, opposite equal obtuse angles, and four equal sides",
+			"img": "math-img/Rhombi.png",
+			"tags": ["geometry", "geo-u1", "geo-u7", "shapes", "quadrilaterals"],
+			"created": "Deepika"
+		},
+		{
+			"title": "Rectangle",
+			"subtitle": "Diagonals are congruent & bisect each other",
+			"desc": "A four-sided plane (2D) figure with opposite sides parallel and congruent, and four right angles. All squares are rectangles, not all rectangles are squares!",
+			"img": "math-img/rectangle.jpg",
+			"tags": ["geometry", "geo-u1", "geo-u7", "shapes", "quadrilaterals"],
+			"created": "Deepika"
+		},
+		{
+			"title": "Kites",
+			"subtitle": "... go fly one!",
+			"desc": "A four-sided plane (2D) figure with adjacent sides congruent",
+			"img": "math-img/kite.png",
+			"tags": ["geometry", "geo-u1", "geo-u7", "shapes", "quadrilaterals"],
+			"created": "Jamie"
+		},
+		{
+			"title": "Trapezoids",
+			"subtitle": "A member of the quadrilateral family",
+			"desc": "A four-sided plane (2D) figure with at least one pair of opposite sides parallel to each other",
+			"img": "math-img/trapezoid-parallel-arrows.svg",
+			"tags": ["geometry", "geo-u1", "geo-u7", "shapes", "trapezoids", "quadrilaterals"],
+			"created": "Jamie"
+		},
+		{
+			"title": "Quadratics",
+			"subtitle": "a curved type of function",
+			"desc": "Any function of the family y = x<sup>2</sup>, expressed in standard form as y = ax<sup>2</sup> + bx + c, where a &ne; 0",
+			"img": "math-img/ben-crane-shot-tracker.jpg",
+			"tags": ["algebra-1", "alg1-u7", "quadratics", "functions"],
+			"created": "Mr. Cleland"
+		},
+		{
+			"title": "Quadratic formula",
+			"subtitle": "Solves quadratic equations",
+			"desc": "The quadratic formula is used in algebra to solve quadratic equations. The general form of a quadratic equation is , where x represents a variable, and a, b, and c are constants, with a quadratic equation has two solutions, called roots.",
+			"img": "math-img/220px-Quadratic_formula.svg.png",
+			"tags": ["algebra-1", "formulas", "quadratics"],
+			"created": "Dustin"
+		},
+		{
+			"title": "Slope",
+			"subtitle": "(y<sub>2</sub> &mdash; y<sub>1</sub>)/(x<sub>2</sub> &mdash; x<sub>1</sub>)",
+			"desc": "The slope of a line characterizes the steepness & direction of a line. To find the slope, you divide the difference of the y-coordinates of 2 points on a line by the difference of the x-coordinates of those same 2 points",
+			"img": "math-img/slope-of-a-line-diagram.gif",
+			"tags": ["geometry", "geo-u1", "geo-u7", "slope", "quadrilaterals"],
+			"created": "Jamie"
+		},
+		{
+			"title": "2 parallel lines cut by a transversal",
+			"subtitle": "When two parallel lines are cut by a transversal, all of the following angle pairs are congruent: ",
+			"desc": "corresponding, alternate interior, alternate exterior, and vertical angles",
+			"img": "math-img/parallellinestransversal.jpg",
+			"tags": ["geometry", "parallel lines", "angles"],
+			"created": "Tyler"
+		},
+		{
+			"title": "Scatter plot",
+			"subtitle": "A type of graph for statistics",
+			"desc": "A graph of plotted points that show the relationship between two sets of data. In this example, each dot represents one person's weight versus their height.",
+			"img": "math-img/scatter-plot.gif",
+			"tags": ["statistics", "algebra-1", "graphs"],
+			"created": "Dustin"
+		},
+		{
+			"title": "Chords",
+			"subtitle": "straight line segment, secant, diameter, ellipse",
+			"desc": "A straight line segment whose endpoints both lie on the circle, a chord that passes through a circle's center point is the circle's diameter. Every diameter is a chord, but not every chord is a diameter.",
+			"img": "http://study.com/cimages/multimages/16/imagechord1.jpg",
+			"tags": ["circles", "diameter", "straight", "geometry"],
+			"created": "Jonah"
+		},
+		{
+			"title": "Inscribed angles",
+			"subtitle": "An inscribed angle = half of its arc",
+			"desc": "An inscribed angle is an angle formed by two chords in a circle which have a common endpoint on the circle",
+			"img": "math-img/inscibedangle.png",
+			"tags": ["geometry", "geo-u8", "shapes", "circles"],
+			"created": "Ashley"
+		},
+		{
+			"title": "Positive slope",
+			"subtitle": "positive",
+			"desc": "A positive slope moves upward on a graph from left to right. When 'x' increases, 'y' also increases",
+			"img": "math-img/positiveSlope.gif",
+			"tags": ["geometry", "lines", "slope"],
+			"created": "Evan"
+		},
+		{
+			"title": "Negative slope",
+			"subtitle": "decreasing",
+			"desc": "A negative slope moves downward on a graph from left to right. When 'x' increases, 'y' decreases",
+			"img": "math-img/negativeSlope.gif",
+			"tags": ["geometry", "lines", "slope"],
+			"created": "Evan"
+		},
+		{
+			"title": "Zero slope",
+			"subtitle": "horizontal",
+			"desc": "A zero slope is just the slope of a horizontal line. The y-coordinate never changes no matter what the x-coordinate is. There is no rise.",
+			"img": "math-img/zeroSlope.gif",
+			"tags": ["geometry", "lines", "slope"],
+			"created": "Evan"
+		},
+		{
+			"title": "Undefined slope",
+			"subtitle": "undefined",
+			"desc": "An undefined slope is the slope of a vertical line. The x-coordinate never changes no matter what the y-coordinate is. There is no run.",
+			"img": "math-img/undefinedSlope.png",
+			"tags": ["geometry", "lines", "slope"],
+			"created": "Evan"
+		},
+		{
+			"title": "Zeros/Roots/x-Intercepts",
+			"subtitle": "to find the roots of a quadratic function, we set f (x) = 0, and solve the equation, ax<sup>2</sup> + bx + c = 0.",
+			"desc": "The y-coordinate of points lying on the x-axis is zero.",
+			"img": "math-img/zeros.PNG",
+			"tags": ["algebra-1", "alg1-u7", "quadratics", "functions", "zeros", "solutions", "roots", "intercepts"],
+			"created": "Deepika"
+		},
+		{
+			"title": "Tangent",
+			"subtitle": "A radius and a tangent are perpendicularat the point of tangency",
+			"desc": "A tangent line intersects a circle at exactly one point",
+			"img": "math-img/tangentline.jpg",
+			"tags": ["geometry", "geo-u8", "shapes", "circles", "line"],
+			"created": "Ashley"
+		},
+		{
+			"title": "Secant",
+			"subtitle": "Secant lines contain chords, but extend beyond the circle's boundary",
+			"desc": "a secant line intersects a circle at exactly two points",
+			"img": "math-img/secant-line.gif",
+			"tags": ["geometry", "geo-u8", "shapes", "circles", "line", "chord"],
+			"created": "Ashley"
+		},
+
+		{
+			"title": "Similar figures",
+			"subtitle": "Ratios and Proportions",
+			"desc": "Two figures that have the same shape and the ratios of the lenths of their corresponding sides are equal.",
+			"img": "math-img/similar-figures.gif",
+			"tags": ["geometry"],
+			"created": "Mert"
+		},
+		{
+			"title": "Range",
+			"subtitle": "From min to max",
+			"desc": "The difference between the lowest and highest values.",
+			"img": "math-img/range.gif",
+			"tags": ["statistics"],
+			"created": "Mert"
+		},
+		{
+			"title": "Conditional equation",
+			"subtitle": "Most equations are conditional&mdash;they have a finite number of solutions",
+			"desc": "An equation that is true for some value(s) of the variable(s) and not true for others. Example: The equation 3x - 5 = 16 is conditional because it is only true for x = 7. Other values of x do not satisfy the equation.",
+			"img": "math-img/conditional_equation.jpg",
+			"tags": ["conditional"],
+			"created": "Matt"
+		},
+		{
+			"title": "Scalene triangles",
+			"subtitle": "Scalene ends in 'NE'&mdash;think 'none equal'",
+			"desc": "A triangle in which all three sides are different, resulting in angles that also vary",
+			"img": "math-img/scalene.png",
+			"tags": ["geometry", "shapes"],
+			"created": "Nya"
+		},
+		{
+			"title": "Isosceles triangles",
+			"subtitle": "'SOS'&mdash;think 'SAME other SAME'",
+			"desc": "A triangle in which two of the three sides are the same, causing the base angles to also be equal",
+			"img": "math-img/isos.gif",
+			"tags": ["geometry", "shapes"],
+			"created": "Nya"
+		},
+		{
+			"title": "Plane",
+			"subtitle": "A two-dimensional, flat surface",
+			"desc": "a flat surface on which a straight line joining any two points on it would wholly lie",
+			"img": "math-img/plane.png",
+			"tags": ["geometry", "shapes", "points", "lines", "Euclidean", "2D"],
+			"created": "Nya"
+		},
+		{
+			"title": "Mean",
+			"subtitle": "The mean is the average you're used to, where you add up all the numbers and then divide by the number of numbers. ",
+			"desc": "a calculated central value of a set of numbers",
+			"img": "math-img/mean.png",
+			"tags": ["algebra-1", "statistics"],
+			"created": "Deepika"
+		},
+		{
+			"title": "L'Hopital's rule",
+			"subtitle": "When the value is indeterminate (0/0 or inf/inf)",
+			"desc": "Take derivatives of numer & denom, then re-evaluate",
+			"img": "math-img/lhopitals_rule.jpg",
+			"tags": ["calculus", "limits", "indeterminate"],
+			"created": "Johnny U"
+		},
+		{
+			"title": "Continuity test",
+			"subtitle": "A function y = f (x) is continuous at x = a if and only if the limit as x approaches a of f (x) equals f (a).",
+			"desc": "The following 3 conditions must hold true in order for a function to be continuous",
+			"img": "math-img/Continuity Test.JPG",
+			"tags": ["calculus", "continuous", "continuity", "continuity test"],
+			"created": "Erin McKenna"
+		},
+		{
+			"title": "Second derivative test",
+			"subtitle": "Use to find a max or min",
+			"desc": "If f'(c)=0 then there is a critical point at c. If the second derivative is positive at x=c, then f has a min here. If the second derivative is negative, f has a max.",
+			"img": "math-img/Second-derivative.PNG",
+			"tags": ["calculus", "graphs", "test", "derivative", "extrema"],
+			"created": "Alexis Rivaldo"
+		},
+		{
+			"title": "Distance, velocity, and acceleration relationships",
+			"subtitle": "They all relate!",
+			"desc": "Velocity is the first derivative of position. Acceleration is the first derivative of velocity, or the second derivative of position. This also means that velocity is the antiderivative of acceleration and position is the antiderivative of velocity.",
+			"img": "math-img/position_velocity_acceleration_relationship.gif",
+			"tags": ["calculus", "derivatives", "integral", "relationships", "position", "velocity", "acceleration"],
+			"created": "Kyle Gear"
+		},
+		{
+			"title": "Area between two curves",
+			"subtitle": "Top Curve Minus Bottom Curve",
+			"desc": "If function f(x) and g(x) and continuous and f(x)≥g(x) over the closed interval [a,b], then the area of the region between the curves f(x) and g(x) from x=a to x=b is &int;(f(x)-g(x))dx. ",
+			"img": "math-img/area_between_two_curves.gif",
+			"tags": ["calculus", "area between two curves", "integral"],
+			"created": "Diem Ho"
+		},
+		{
+			"title": "Slope field",
+			"subtitle": "Also called vector and directional fields",
+			"desc": "A tool to graphically obtain the solutions to a first order differential equation. Each line segment on the slope field represents the slope at that point. The higher the derivative the steeper the slope. Horizontal lines=slope=0",
+			"img": "math-img/slopefield1.jpg",
+			"tags": ["calculus", "slope", "graphs", "differential equations"],
+			"created": "Orlando Boxx"
+		},
+		{
+			"title": "Inflection point",
+			"subtitle": "Use the first or second derivative!",
+			"desc": "An inflection point is a point on a curve at which a change in the concavity of the graph will occur. An inflection point will occur when f’’ changes signs while f’ will change direction.",
+			"img": "math-img/Inflection-Point.jpg",
+			"tags": ["graphs", "points", "calculus", "concavity"],
+			"created": "Taylor Nathan"
+		},
+		{
+			"title": "Extrema",
+			"subtitle": "Max and Min when f’ crosses the x axis",
+			"desc": "when f' changes from positive to negative there is a maximum and when f' changes from negative to positive there is a minimum",
+			"img": "math-img/rumors_f_has_max_min.png",
+			"tags": ["calculus", "first derivative extrema", "derivative graph"],
+			"created": "Abbey Pettit"
+		},
+		{
+			"title": "Increasing and decreasing functions",
+			"subtitle": "Using the First Derivative",
+			"desc": "When the first derivative of a function is positive, the function is increasing. When the the first derivative is negative, the function is decreasing.",
+			"img": "math-img/sean_rumors.jpg",
+			"tags": ["calculus", "derivatives", "functions", "graphs", "increasing", "decreasing"],
+			"created": "Sean Zimmerman"
+		},
+		{
+			"title": "Left rectangle approximation method",
+			"subtitle": "AKA LRAMs",
+			"desc": "A rectangle approximation, also referred to as a Riemann Sum fits one or more rectangles underneath a curve, and takes the total area of those rectangles as the estimated area beneath the curve. LRAMs are one of the methods in which the left boundary of the rectangles are used. If a function is increasing, LRAM will underestimate the area, which means the approximate area will be smaller than the actual area. If a function is decreasing, LRAM will overestimate the area, which means the approximate area will be greater than the actual area.",
+			"img": "math-img/LRAM4.PNG",
+			"tags": ["calculus", "approximation", "Riemann sums", "rectangles"],
+			"created": "Olivia Munyon"
+		},
+		{
+			"title": "Implicit differentiation",
+			"subtitle": "Calculus",
+			"desc": "Also recognized as hidden Y, implicit differentiation is solving for dy/dx within a function by taking the derivative of each term separately",
+			"img": "math-img/implicit_differentiation.gif",
+			"tags": ["derivatives", "hidden y", "dy/dx", "calculus"],
+			"created": "Emma Daley"
+		},
+		{
+			"title": "Finding total distance",
+			"subtitle": "Calc is fun!",
+			"desc": "Find total distance by integrating the velocity formula [v(t)=s'(t)] over the given interval. If the graph dips below the x-axis, you’ll need to integrate two or more parts of the graph and add the absolute values.",
+			"img": "math-img/total_distance.PNG",
+			"tags": ["calculus", "derivative", "velocity", "distance"],
+			"created": "Matt Newman"
+		},
+		{
+			"title": "Critical point",
+			"subtitle": "Possible extrema",
+			"desc": "if f is defined at x=c and either f'(c)=0 or f'(x) does not exist, then c is called a critical point",
+			"img": "math-img/critical_point.png",
+			"tags": ["calculus", "critical points", "point"],
+			"created": "Truc Le"
+		},
+		{
+			"title": "Right Riemann sum",
+			"subtitle": "Rectangle approximation method",
+			"desc": "An approximation of the area between the function and the x-axis. If a function is increasing, RRAM overestimates the area. If a function is decreasing, RRAM underestimates the area. Given a range, you must break the area into several subintervals and use the right side of the subinterval to determine the height of a rectangle.",
+			"img": "math-img/RRAM.PNG",
+			"tags": ["calculus", "Riemann Sum", "RRAM"],
+			"created": "Taylor Clark"
+		},
+		{
+			"title": "Formal Limit derivative definition",
+			"subtitle": "Definition of the derivative",
+			"desc": "The derivative of the function f with respect to the variable x is the function f’, where",
+			"img": "math-img/formal_limit_derivative_definition.JPG",
+			"tags": ["calculus", "limit", "derivative", "formal", "definition"],
+			"created": "Ryan Potter"
+		},
+		{
+			"title": "Derivative rules",
+			"subtitle": "Product, quotient, and, chain rule",
+			"desc": "How to derive complicated solutions and functions",
+			"img": "math-img/Product_Quotient_And_Chain_Rule.PNG",
+			"tags": ["calculus", "derivatives", "calc-u6", "functions"],
+			"created": "Bishoy Ibrahim"
+		},
+		{
+			"title": "Simple trig integral rules",
+			"subtitle": "Antiderivatives (Integrals) of sin(x), cos(x), and tan(x)",
+			"desc": "A function F(x) is an antiderivative of a function f(x) if F`(x) = f(x) for all x in the domain of f(x) . The term indefinite integral is a synonym for antiderivative.",
+			"img": "math-img/integral_trig.PNG",
+			"tags": ["calculus", "integrals", "trig", "antiderivative rules"],
+			"created": "Hayleigh Arthmann"
+		},
+		{
+			"title": "Concavity of a function",
+			"subtitle": "Concavity rules",
+			"desc": "If f'' (x) > 0 then f(x) is concave up.If f ''(x)<0 then f(x) is concave down",
+			"img": "math-img/rumors_concavity_second_derivative.JPG",
+			"tags": ["calculus", "function", "lines", "concave up", "concave down", "second derivative", "concavity"],
+			"created": "Anthony Cao"
+		},
+		{
+			"title": " Determining concavity",
+			"subtitle": "Using the first derivative to determine concavity",
+			"desc": "When f’(x) is increasing, f(x) is concave up. When f’(x) is decreasing,f(x) is concave down.",
+			"img": "math-img/firstderivative.png",
+			"tags": ["calculus", "first derivative", "concavity", "functions"],
+			"created": "Emily Sattora"
+		},
+		{
+			"title": "Mean value theorem",
+			"subtitle": "MVT",
+			"desc": "The Mean Value Theorem states that if f(x) is differentiable and continuous on the interval [a,b], then there is at least one number c in the interval (a,b) (that is a < c < b) such that",
+			"img": "math-img/MVT_final_photo.PNG",
+			"tags": ["calculus", "theorems", "mvt"],
+			"created": "Sareena Vassell"
+		},
+		{
+			"title": "Fundamental Theorem of Calculus",
+			"subtitle": "aka FTC for short!",
+			"desc": "To evaluate, the FTC says that if f is continuous on [a, b] and F is any antiderivative of f on [a, b], then . For an antiderivative, the FTC says that if f is continuous on [a, b], then the function  has a derivative at every point x in [a, b], and  .",
+			"img": "math-img/ftc_new.PNG",
+			"tags": ["calculus", "theorems", "ftc"],
+			"created": "Erika Ly"
+		},
+		{
+			"title": "Displacement",
+			"subtitle": "there are two ways, calculus and physics",
+			"desc": "The positon change from point A to point B for physics, you integrate for calclulus and the area under the velocity vs.time curve ",
+			"img": "math-img/displacement.PNG",
+			"tags": ["calculus", "motion", "displacement"],
+			"created": "Jillian Masetta"
+		},
+		{
+				"title": "Derivative rules",
+				"subtitle": "Exponential and Logarithmic Derivative Rules",
+				"desc": "How to take the derivative of exponential and logarithmic functions",
+				"img": "math-img/exp_log.gif",
+				"tags": ["exponential", "logarithmic", "derivative", "calculus"],
+				"created": "Leah Buck"
+			},
+			{
+				"title": "Calculator coding",
+				"subtitle": "More coding lol",
+				"desc": "Code for a calculator is written on the left side, the right side is what happens when you run the code applying basic math questions resulting in the code performing the action.",
+				"img": "math-img/Calculator.png",
+				"tags": ["calculus"],
+				"created": "D-La"
+			},
+			{
+				"title": "Derivative rules",
+				"subtitle": "sin, cos, tan",
+				"desc": "Rules that may be followed to find several derivatives",
+				"img": "math-img/trig_rules.JPG",
+				"tags": ["derivative", "derivative rules", "calculus", "trig functions"],
+				"created": "Jourdan Smith"
+			},
+			{
+				"title": "Volume of rotation",
+				"subtitle": "Washer",
+				"desc": "The volume of a solid is generated by revolving the region bounded by y = f(x) and y = g(x) on the interval x = a and x = b where f(x) ≥ g(x)",
+				"img": "math-img/rotation.JPG",
+				"tags": ["calculus", "formula", "volume", "washer"],
+				"created": "Deziree Bell"
+			}
+	]
+}

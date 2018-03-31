@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+	<!-- KEVINCLELAND.COM v3.0 -->
+	<!-- https://www.thinkful.com/learn/a-guide-to-using-github-pages/start/existing-project/user-page/ -->
+	<!-- http://blog.teamtreehouse.com/using-github-pages-to-host-your-website -->
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	
+	<!-- GOOGLE WEB FONTS -->
+	  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Volkhov:700i" rel="stylesheet">
+	  
+	<!-- MATERIALIZE CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/css/materialize.min.css">
+      <!-- ICONS -->
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+	
+	<!-- CUSTOM STYLESHEETS -->
+	  <link rel="stylesheet" href="index.css">
+	  
+	  <!-- PLAN @ https://docs.google.com/document/d/1OVD_cFl26lJKXPLWyhVk1VQ_1JSb4Y-A7DMoPgkOXqo/edit?usp=sharing-->
+	<title>kc3</title>
+
+</head>
+
+<body id="body">
+
+  <div class="container">
+
+  <header>
+  <nav>
+    <div class="nav-wrapper">
+      <!-- BRAND -->
+      <a class="left brand-logo navbar-brand" href="index.html">
+        <div id="brand">
+            <img class="circular" id="brand-img" src="Trata_1_Cropped.jpg" />
+            <span id="nav_first_name">KEVIN</span><span id="nav_last_name">CLELAND.</span>
+        </div>
+      </a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <!-- LARGE DISPLAYS -->
+      <ul class="right hide-on-med-and-down">
+        <li role="presentation"><a href="about.html">ABOUT</a></li>
+        <li role="presentation"><a href="favorites.html">FAVORITES</a></li>
+        <li role="presentation"><a href="quotes.html">QUOTES</a></li>
+        <li role="presentation"><a href="mathcards.html">MATHCARDS</a></li>
+        <!--<li role="presentation"><a href="games.html">GAMES</a></li>-->
+        <!--<li role="presentation"><a href="contact.html">CONTACT</a></li>-->
+      </ul>
+      <!-- med & down -->
+      <ul class="sidenav" id="mobile-demo">
+        <li>
+          <div class="user-view">
+            <div class="background">
+              <img src="before-i-die.jpg">
+            </div>
+          <a href="index.html"><img class="circle" src="Trata_1_Cropped.jpg"></a>
+          <a href="index.html"><span class="white-text name">KEVIN CLELAND</span></a>
+          <a href="mailto:kevin.cleland@gmail.com"><span class="white-text email">KEVIN.CLELAND@GMAIL.COM</span></a>
+          </div>
+        </li>
+        <li><a class="sidenav-close" href="#!"><i class="right material-icons">close</i></a></li>
+        <li role="presentation"><a href="about.html">ABOUT</a></li>
+        <li role="presentation"><a href="favorites.html">FAVORITES</a></li>
+        <li role="presentation"><a href="quotes.html">QUOTES</a></li>
+        <li role="presentation"><a href="mathcards.html">MATHCARDS</a></li>
+        <li role="presentation"><a href="quintillion.html">QUINTILLION</a></li>
+        <li role="presentation"><a href="random-name.html">RANDOM NAME</a></li>
+        <!--<li role="presentation"><a href="games.html">GAMES</a></li>-->
+        <!--<li role="presentation"><a href="contact.html">CONTACT</a></li>-->
+      </ul>
+    </div>
+  </nav>
+  </header>
+  
+  <!-- TO TOP FLOATING BUTTON -->
+  <div class="fixed-action-btn">
+    <a href="#body" id="to-top-button" class="btn-floating waves-effect right btn-large">
+      <i class="material-icons">keyboard_arrow_up</i>
+    </a>
+  </div>
+
+  <main>
+    
+    <div class="row">
+      <div class="jumbotron card">
+        <h1 class="marker">QUOTES.</h1>
+        <!-- BUTTONS -->
+        <p>
+          <a id="prev-quote-btn" class="work-sans waves-effect waves-light black btn quotes-btn"><i class="material-icons valign-middle">chevron_left</i></a>
+          <a id="all-quotes-btn" class="work-sans waves-effect waves-light black btn quotes-btn"><i class="material-icons valign-middle">all_inclusive</i></a>
+          <a id="random-quote-btn" class="work-sans waves-effect waves-light black btn quotes-btn"><i class="material-icons valign-middle">shuffle</i></a>
+          <a id="next-quote-btn" class="work-sans waves-effect waves-light black btn quotes-btn"><i class="material-icons valign-middle">chevron_right</i>
+          </a>
+        </p>
+      </div>
+      
+      <!--https://docs.google.com/document/d/1OD2yt-a3WyTbq2y4vpTamNG69d4kWcqYaT9hmf4uNRE/edit?usp=sharing-->
+      <div id="quote-1" class="card quotes">
+        <p class="work-sans">
+          This is what you shall do; Love the earth and sun and the animals, 
+          despise riches, give alms to everyone that asks, stand up for the 
+          stupid and crazy, devote your income and labor to others, 
+          hate tyrants, argue not concerning God, have patience and 
+          indulgence toward the people, take off your hat to nothing known 
+          or unknown or to any man or number of men, go freely with 
+          powerful uneducated persons and with the young and with the 
+          mothers of families, read these leaves in the open air every 
+          season of every year of your life, re-examine all you have been 
+          told at school or church or in any book, dismiss whatever 
+          insults your own soul, and your very flesh shall be a great poem 
+          and have the richest fluency not only in its words but in the 
+          silent lines of its lips and face and between the lashes of 
+          your eyes and in every motion and joint of your body.
+          <span class="CAPS quote-author">&mdash; Walt Whitman</span>
+        </p>
+      </div>
+      
+      <div id="quote-2" class="card quotes">
+        <p class="work-sans">
+          Our dear race, born without courage but very brave, born with a 
+          flickering intelligence and yet with beauty in its hands. What 
+          animal has made beauty, created it, save only we? With all our 
+          horrors and our faults, somewhere in us there is a shining. 
+          This is the most important of all facts. There is a shining.
+          
+          <span class="CAPS quote-author">&mdash; John Steinbeck</span>
+        </p>
+      </div>
+        
+      <div  id="quote-3" class="card quotes">
+        <p class="work-sans">
+          Live the sunshine, swim the sea, drink the wild air.
+          
+          <span class="CAPS quote-author">&mdash; Ralph Waldo Emerson</span>
+        </p>
+      </div>
+        
+      <div id="quote-4" class="card quotes">
+        <p class="work-sans">
+          Our lives begin to end the day we become silent about things that matter.
+          <span class="CAPS quote-author">&mdash; Martin Luther King, Jr.</span>
+        </p>
+      </div>
+      
+      <div id="quote-5" class="card quotes">
+        <p class="work-sans">
+          My destination is no longer a place, but a new way of seeing.
+          <span class="CAPS quote-author">&mdash; Marcel Proust</span>
+        </p>
+      </div>
+        
+      <div id="quote-6" class="card quotes">
+        <p class="work-sans">
+          My mind is never so pleasantly empty as when I'm chopping wood.
+          <span class="CAPS quote-author">&mdash; Arne Fjeldson</span>
+        </p>
+        <!-- info modal trigger -->
+        <a class="modal-trigger" href="#norwegian-wood-modal">
+        <div class="info">
+          <div class="valign-wrapper">
+            <span class="info-i centered volkhov bold italics">i</span>
+          </div>
+        </div>
+        </a>
+      </div>
+        <!-- norwegian wood modal -->
+        <div id="norwegian-wood-modal" class="modal quotes-modal">
+          <div class="modal-content review">
+            <a class="CAPS" href="https://www.goodreads.com/book/show/25404206-norwegian-wood">
+              <h3 class="deep-blue">NORWEGIAN WOOD</h3>
+            </a>
+            <p class="work-sans">
+              I found this one in the excellent book 
+              <a class="CAPS" href="https://www.goodreads.com/book/show/25404206-norwegian-wood">
+                Norwegian Wood&mdash;Chopping, Stacking, and Drying the Scandinavian Way 
+              </a> by Lars Mytting. It's a ridiculous premise for a book, 
+              I know, but I bought it as a Christmas gift for my grandpa 
+              and since then he, I, and my buddy Joe have all read it 
+              cover to cover and loved it. Check it out if you've ever 
+              enjoyed a good fire! 
+              <a class="CAPS" href="https://www.goodreads.com/book/show/25404206-norwegian-wood">
+                <img class="book-img block centered" src="norwegian-wood.jpg" />
+              </a>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="work-sans modal-action modal-close waves-effect waves-black btn-flat">CLOSE</a>
+          </div>
+        </div><!-- end of modal -->
+      </div>
+        
+      <div id="quote-7" class="card quotes">
+        <p class="work-sans">
+          Attack this day with an enthusiasm unknown to mankind!
+          <span class="CAPS quote-author">&mdash; Jack Harbaugh</span>
+        </p>
+      </div>
+        
+      <div id="quote-8" class="card quotes">
+        <p class="work-sans">
+          The only thing worth writing about is the human heart in conflict with itself.
+          <span class="CAPS quote-author">&mdash; William Faulkner</span>
+        </p>
+        <!-- info modal trigger -->
+        <a class="modal-trigger" href="#faulkner-modal">
+        <div class="info">
+          <div class="valign-wrapper">
+            <span class="info-i centered volkhov bold italics">i</span>
+          </div>
+        </div>
+        </a>
+      </div>
+        <!-- faulkner modal -->
+        <div id="faulkner-modal" class="modal quotes-modal">
+          <div class="modal-content review">
+            <h3>"GOT" INSPIRATION</h3>
+            <p class="work-sans">
+              George R.R. Martin, author of the critcally acclaimed 
+              series <span class="italics">Game of Thrones</span>, 
+              has cited this quote from William Faulkner as 
+              <a href="https://interestingliterature.com/2016/04/15/five-fascinating-facts-about-george-r-r-martin/">inspiration for his writing</a>.
+              Author of the classics  
+              <span class="italics">The Sound and the Fury, 
+              As I Lay Dying, Light in August</span> and 
+              <span class="italics">Absalom! Absalom!</span>, 
+              <a href="http://www.flashlightworthybooks.com/William-Faulkner-Best-Books/634">
+                Faulkner</a>  
+              has been awarded the Nobel Prize, the Pulitzer Prize, 
+              and is widely regarded as one of the greatest American 
+              writers. 
+            </p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="work-sans modal-action modal-close waves-effect waves-black btn-flat">CLOSE</a>
+          </div><!-- end of modal -->
+        </div>
+        
+      <div id="quote-9" class="card quotes">
+        <p class="work-sans">
+          The best way to have a great idea is to have a lot of ideas.
+          <span class="CAPS quote-author">&mdash; Linus Pauling</span>
+        </p>
+      </div>
+        
+      <div id="quote-10" class="card quotes">
+        <p class="work-sans">
+          Everyone who is honest is interesting.
+          <span class="CAPS quote-author">&mdash; Stefan Sagmeister</span>
+        </p>
+      </div>
+        
+      <div id="quote-11" class="card quotes">
+        <p class="work-sans">
+          He who laughs most, learns best.
+          <span class="CAPS quote-author">&mdash; John Cleese</span>
+        </p>
+      </div>
+        
+      <div id="quote-12" class="card quotes">
+        <p class="work-sans">
+          Most people are on the world, not in it — have no conscious sympathy or relationship to anything about them — undiffused, separate, and rigidly alone like marbles of polished stone, touching but separate.
+          <span class="CAPS quote-author">&mdash; John Muir</span>
+        </p>
+      </div>
+        
+      <div id="quote-13" class="card quotes">
+        <p class="work-sans">
+          Of all the paths you take in life, make sure some of them are dirt.
+          <span class="CAPS quote-author">&mdash; John Muir</span>
+        </p>
+      </div>
+        
+      <div id="quote-14" class="card quotes">
+        <p class="work-sans">
+          The mountains are calling, and I must go…
+          <span class="CAPS quote-author">&mdash; John Muir</span>
+        </p>
+      </div>
+        
+      <div id="quote-15" class="card quotes">
+        <p class="work-sans">
+          The power of imagination makes us infinite.
+          <span class="CAPS quote-author">&mdash; John Muir</span>
+        </p>
+      </div>
+        
+      <div id="quote-16" class="card quotes">
+        <p class="work-sans">
+          If the path be beautiful, let us not ask where it leads.
+          <span class="CAPS quote-author">&mdash; Anatole France</span>
+        </p>
+      </div>
+        
+      <div id="quote-17" class="card quotes">  
+        <p class="work-sans">
+          The same people who worry about thinking machines today were certain that the introduction of calculators would usher in an era of knuckle-dragging imbecility.
+          <span class="CAPS quote-author">&mdash; Nina Jablonski</span>
+        </p>
+      </div>
+        
+      <div id="quote-18" class="card quotes">
+        <p class="work-sans">
+          You put your mind to it, you try to do right by people, you listen, you don't run around with the answers, eventually a door opens up. Be prepared and take advantage of it.
+          <span class="CAPS quote-author">&mdash; Frank Martin</span>
+        </p>
+      </div>
+        
+      <div id="quote-19" class="card quotes">
+        <p class="work-sans">
+          The sky is not my limit... I am.
+          <span class="CAPS quote-author">&mdash; T. F. Hodge</span>
+        </p>
+      </div>
+        
+      <div id="quote-20" class="card quotes">
+        <p class="work-sans">
+          If you don't imagine, nothing ever happens at all.
+          <span class="CAPS quote-author">&mdash; John Green</span>
+        </p>
+      </div>
+        
+      <div id="quote-21" class="card quotes">
+        <p class="work-sans">
+          Travel makes one modest. You see what a tiny place you occupy in the world.
+          <span class="CAPS quote-author">&mdash; Gustave Flaubert</span>
+        </p>
+      </div>
+      
+      <div id="quote-22" class="card quotes">
+        <p class="work-sans">
+          Hard work won't guarantee you success, but without hard work, I can guarantee you won't have success. What do you choose? 
+          <span class="CAPS quote-author">&mdash; Bruce Pearl</span>
+        </p>
+      </div>
+      
+      <div id="quote-23" class="card quotes">
+        <p class="work-sans">
+          You are organized when you have what you need, when you need it. 
+          <span class="CAPS quote-author">&mdash; Jeannie Lally, greatest school counselor I have ever met</span>
+        </p>
+      </div>
+      
+      <div id="quote-24" class="card quotes">
+        <p class="work-sans">
+          Eat food. Not too much. Mostly plants.
+          <span class="CAPS quote-author">&mdash; Michael Pollan</span>
+        </p>
+      </div>
+      
+      <div id="quote-25" class="card quotes">
+        <p class="work-sans">
+          If God created the world, where was He before Creation?... Know that the world is uncreated, as time itself is, without beginning and end.
+          <span class="CAPS quote-author">&mdash; Mahapurana (India, ninth century)</span>
+        </p>
+      </div>
+      
+      <div id="quote-26" class="card quotes">
+        <p class="work-sans">
+          I have lived through much, and now I think I have found what is needed for happiness. A quiet secluded life in the country, the possibility of being useful to people to whom it is easy to do good, and who are not accustomed to having it done it to them; then work which one hopes may be of some use; then rest, nature, books, music, love for one's neighbor—such is my idea of happiness. And then, on top of all that, you for a mate, and children perhaps—what more can the heart of a man desire?
+          <span class="CAPS quote-author">&mdash; Leo Tolstoy</span>
+        </p>
+      </div>
+      
+      <div id="quote-27" class="card quotes">
+        <p class="work-sans">
+          Go West, young man, go West and grow up with the country.
+          <span class="CAPS quote-author">&mdash; Horace Greeley</span>
+        </p>
+      </div>
+      
+      <div id="quote-28" class="card quotes">
+        <p class="work-sans">
+          Three passions, simple but overwhelmingly strong, have governed my life: the longing for love, the search for knowledge, and an unbearable pity for the suffering of mankind. These passions, like great winds, have blown me hither and thither, in a wayward course, over a deep ocean of anguish, reaching to the very verge of despair. 
+          <span class="CAPS quote-author">&mdash; Bertrand Russell</span>
+        </p>
+      </div>
+      
+      <div id="quote-29" class="card quotes">
+        <p class="work-sans">
+          The wise man is one who knows what he does not know.
+          <span class="CAPS quote-author">&mdash; Lao Tzu</span>
+        </p>
+      </div>
+      
+      <div id="quote-30" class="card quotes">
+        <p class="work-sans">
+          All I know is that I know nothing.
+          <span class="CAPS quote-author">&mdash; Socrates</span>
+        </p>
+      </div>
+      
+      <div id="quote-31" class="card quotes">
+        <p class="work-sans">
+          The fool doth think he is wise, but the wise man knows himself to be a fool.
+          <span class="CAPS quote-author">&mdash; William Shakespeare</span>
+        </p>
+      </div>
+      
+      <div id="quote-32" class="card quotes">
+        <p class="work-sans">
+          No one will be able to read the great book of the Universe if he does not understand its language, which is that of mathematics.
+          <span class="CAPS quote-author">&mdash; Galileo Galilei</span>
+        </p>
+      </div>
+      
+      <div id="quote-33" class="card quotes">
+        <p class="work-sans">
+          It is my conviction that pure mathematical construction enables us to discover the concepts and the laws connecting them, which gives us the key to the understanding of nature.... In a certain sense, therefore, I hold it true that pure thought can grasp reality, as the ancients dreamed.
+          <span class="CAPS quote-author">&mdash; Albert Einstein</span>
+        </p>
+      </div>
+      
+      <div id="quote-34" class="card quotes">
+        <p class="work-sans">
+          If you want something you’ve never had, you have to be willing to do something you have never done.
+          <span class="CAPS quote-author">&mdash; Thomas Jefferson</span>
+        </p>
+      </div>
+      
+      <div id="quote-35" class="card quotes">
+        <p class="work-sans">
+          A reader lives a thousand lives before he dies. The man who never reads lives only one.
+          <span class="CAPS quote-author">&mdash; George R.R. Martin <span class="italics">[Jojen Reed]</span></span>
+        </p>
+      </div>
+      
+      <div id="quote-36" class="card quotes">
+        <p class="work-sans">
+          Even in war’s darkest days, in most places in the world, absolutely nothing is happening.
+          <span class="CAPS quote-author">&mdash; George R.R. Martin <span class="italics">[Brynden Tully]</span></span>
+        </p>
+      </div>
+      
+      <div id="quote-37" class="card quotes">
+        <p class="work-sans">
+          The man who does not read has no advantage over the man who cannot read.
+          <span class="CAPS quote-author">&mdash; Mark Twain</span>
+        </p>
+      </div>
+      
+      <div id="quote-38" class="card quotes">
+        <p class="work-sans">
+          Men do not learn very much from the lessons of history, and that is the most important of all the lessons of history.
+          <span class="CAPS quote-author">&mdash; Aldous Huxley</span>
+        </p>
+      </div>
+      
+      <div id="quote-39" class="card quotes">
+        <p class="work-sans">
+          We’ve all seen the movies where the hero is in trouble, and he’s surrounded by twenty people, but you know he’s going to get away because he’s the hero. So you don’t really feel any fear for him. I want my readers, and I want my viewers to be afraid when my characters are in danger.
+          <span class="CAPS quote-author">&mdash; George R.R. Martin</span>
+        </p>
+      </div>
+      
+      <div id="quote-40" class="card quotes">
+        <p class="work-sans">
+          The truth is a stubborn thing; it doesn't go away.
+          <span class="CAPS quote-author">&mdash; Tom Riner</span>
+        </p>
+      </div>
+      
+      <div id="quote-41" class="card quotes">
+        <p class="work-sans">
+          If you’re not ready for love, how can you be ready for life? 
+          <span class="CAPS quote-author">&mdash; Soko</span>
+        </p>
+      </div>
+      
+      <div id="quote-42" class="card quotes">
+        <p class="work-sans">
+          <span class="italics">[After his renewable energy company was bought by a much larger energy company dead-set on killing renewable energy options at all cost]</span>
+          Well, I'm accidentally in the middle of the Death Star here. I should probably figure out how the thing works before I leave.
+          <span class="CAPS quote-author">&mdash; Bryan Miller, Former Vice President of Public Policy at SunRun</span>
+        </p>
+      </div>
+      
+      <div id="quote-43" class="card quotes">
+        <p class="work-sans">
+          Do we want our children one day to say to us, ‘Wait a minute, you knew this was a problem and you ignored it?’
+          <span class="CAPS quote-author">&mdash; David Letterman, on climate change and renewable energy</span>
+        </p>
+      </div>
+      
+      <div id="quote-44" class="card quotes">
+        <p class="work-sans">
+          When you see the world, the world sees you.
+          <span class="CAPS quote-author">&mdash; Sebastian Maniscalco</span>
+        </p>
+      </div>
+      
+      <div id="quote-45" class="card quotes">
+        <p class="work-sans">
+          Confidence: It's the food of the wise man but the liquor of the fool.
+          <span class="CAPS quote-author">&mdash; Vikram <span class="italics">[The Office]</span></span>
+        </p>
+      </div>
+      
+      <div id="quote-46" class="card quotes">
+        <p class="work-sans">
+          Mathematics is the vocabulary for your own intuition.
+          <span class="CAPS quote-author">&mdash; Dan Meyer</span>
+        </p>
+        <!-- info modal trigger -->
+        <a class="modal-trigger" href="#meyer-modal">
+        <div class="info">
+          <div class="valign-wrapper">
+            <span class="info-i centered volkhov bold italics">i</span>
+          </div>
+        </div>
+        </a>
+      </div>
+        <!-- meyer modal -->
+        <div id="meyer-modal" class="modal quotes-modal">
+          <div class="modal-content review">
+            <h3 class="deep-blue">BE LESS HELPFUL</h3>
+            <p class="work-sans">
+              <a href="http://blog.mrmeyer.com/">Dan Meyer</a> 
+              is one of the greastest math teacher on Planet 
+              Earth and someone admire tremendously. His TED Talk, 
+              <a href="https://www.ted.com/talks/dan_meyer_math_curriculum_makeover?utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare">
+                <span class="CAPS TED-red">Math Class Needs a Makeover</span></a>,
+              has been viewed over 
+              <span class="CAPS">2 and a half million times</span>. 
+              Give it another one if you're planning a presentation or 
+              giving a speech in the near future, or just if you've 
+              ever been bored in class. 
+            </p>
+            <p>
+              <div style="max-width:854px"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://embed.ted.com/talks/dan_meyer_math_curriculum_makeover" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe></div></div>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="work-sans modal-action modal-close waves-effect waves-black btn-flat">CLOSE</a>
+          </div>
+        </div><!-- end of modal -->
+      
+      <div id="quote-47" class="card quotes">
+        <p class="work-sans">
+          We still educate our children by batches. It's like the most 
+          important thing about them is their date of manufacture. 
+          <span class="CAPS quote-author">&mdash; Sir Ken Robinson</span>
+        </p>
+        <!-- info modal trigger -->
+        <a class="modal-trigger" href="#ken-rob-modal">
+        <div class="info">
+          <div class="valign-wrapper">
+            <span class="info-i centered volkhov bold italics">i</span>
+          </div>
+        </div>
+        </a>
+      </div>
+        <!-- ken-rob modal -->
+        <div id="ken-rob-modal" class="modal quotes-modal">
+          <div class="modal-content review">
+            <h3>CHANGE THE PARADIGM</h3>
+            <p>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/zDZFcDGpL4U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </p>
+            <p class="work-sans">
+              <a href="http://sirkenrobinson.com/about/">
+                Sir Ken Robinson
+              </a> 
+              was knighted by Queen Elizabeth II for his contributions 
+              to education and the arts. His 
+              <a href="https://www.ted.com/speakers/sir_ken_robinson">
+                <span class="TED-red">TED Talks</span>
+              </a> 
+              have <span class="CAPS">over 66 million views</span>. 
+              The one below is my personal favorite, but don't stop there. 
+              His most popular, 
+              <a href="https://www.ted.com/talks/ken_robinson_says_schools_kill_creativity?utm_campaign=tedspread&utm_medium=referral&utm_source=tedcomshare">
+                <span class="CAPS TED-red">Do Schools Kill Creativity?</span>
+              </a> has over 50 million of those alone. 
+            </p>
+            <p class="work-sans">
+              His book, The Element&mdash;How Finding your Passion 
+              Changes Everything, has has a profound impact on my 
+              life and work. 
+            </p>
+            <p>
+              <a href="https://www.goodreads.com/book/show/4224060-the-element">
+                <img class="book-img block centered" src="the-element.jpg" />
+              </a>
+            </p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="work-sans modal-action modal-close waves-effect waves-black btn-flat">CLOSE</a>
+          </div>
+        </div><!-- end of modal -->
+      </div>
+      
+      
+      
+      <!--BLANK QUOTE TEMPLATE -->
+      <!--<div id="quote-___" class="card quotes">-->
+      <!--  <p class="work-sans">-->
+      <!--    QUOTE-->
+      <!--    <span class="CAPS quote-author">&mdash; AUTHOR</span>-->
+      <!--  </p>-->
+      <!--</div>-->
+      
+    </div> <!-- CLOSE ROW -->
+    
+  </main>
+  
+  <footer>
+    <div class="footer-flex-container">
+    <br />
+    <br />
+    <br />
+    
+    <!-- kc footer -->
+    <p class="footer-credit">site design by 
+      <a class="foot-name-link" href="https://kevincleland.com/about.html">
+        kevin cleland
+      </a>
+      <a href="https://instagram.com/goforth_andprosper/">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://open.spotify.com/user/1245748701/playlist/0Kr3hSg0stBIbb7Gbq8qNt">
+        <i class="fab fa-spotify"></i>
+      </a>
+      <!--<span id="globe-emoji" class="glyphs">&#127760;</span>-->
+      <!--<a href="https://www.linkedin.com/in/kevin-cleland-9283b736">-->
+        <!--<img class="glyphs" src="glyphs/linkedin.png">-->
+      <!--</a>-->
+    </p>
+    
+    <br />
+    
+  </div>
+  </footer>
+  
+</div> <!-- CLOSE CONTAINER -->
+
+</body>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- MATERIALIZE JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.3/js/materialize.min.js"></script>
+<!-- CUSTOM JS -->
+<script src="index.js"></script>
+<script src="quotes.js"></script>
+
+</html>

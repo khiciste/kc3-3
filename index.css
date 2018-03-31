@@ -1,0 +1,474 @@
+/* KEVINCLELAND.COM v3.0 */
+/* https://css-tricks.com/box-sizing/ */
+/* https://brandcolors.net/ */
+
+html {
+  box-sizing: border-box;
+  background-color: whitesmoke;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* FONTS */
+body           { font-family: 'Roboto', 'Open Sans', sans-serif; }
+.cutive-mono   { font-family: 'Cutive Mono', monospace; } /* non-fiction */
+.marker        { font-family: 'Permanent Marker', 'Work Sans', sans-serif !important; }
+.volkhov       { font-family: 'Volkhov', serif; }
+.open-sans     { font-family: 'Open Sans', sans-serif; }
+.roboto        { font-family: 'Roboto', sans-serif; }
+.special-elite { font-family: 'Special Elite', monospace; } /* fiction */
+.work-sans     { font-family: 'Work Sans', sans-serif; }
+
+/* FONT STYLES */
+.bold          { font-weight: bold; }
+.CAPS          { text-transform: UPPERCASE; }
+.italics       { font-style: italic; }
+
+
+/* COLORS */
+.hangouts-green { background-color: #0f9d58; }
+.hangouts-green:hover { background-color: #0f9d58; }
+
+.container {
+    /*border: 4px solid black;*/
+    /*margin-left: 1vw;*/
+    width: 100%;
+    overflow-x: hidden;
+}
+.centered {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+.centered-text {
+    text-align: center;
+}
+.hidden {
+    display: none;
+}
+
+/* HEADER ================================================ */
+header {
+    /*border: 2px solid red;*/
+    margin-bottom: 40px;
+}
+.header-flex-container {
+    /*border: 2px dashed red;*/
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+nav {
+    justify-content: flex-start;
+}
+nav, .nav-wrapper {
+    box-shadow: none;
+    background-color: whitesmoke;
+    font-family: 'Work Sans', 'Open Sans', sans-serif;
+}
+.circular {
+    border-radius: 50%;
+}
+#brand {
+    /*border: 2px solid orange;*/
+    display: inline-flex;
+}
+#nav_first_name {
+    position: relative;
+    top: -5px;
+    vertical-align: sub;
+    color: gray;
+    font-size: 3.3rem;
+    font-weight: 300;
+}
+#nav_last_name {
+    position: relative;
+    vertical-align: super;
+    top: -10px;
+    color: black;
+    font-size: 2.2rem;
+    font-weight: normal;
+    align-items: center;
+}
+.nav-wrapper li a {
+    font-size: 1.5rem;
+}
+.nav-wrapper .hide-on-med-and-down li a {
+    color: #0000ca;
+}
+
+
+/* SIDENAV ================================================ */
+.sidenav {
+    background-color: whitesmoke;
+}
+.sidenav-trigger {
+    display: inline-flex !important;
+    color: gray;
+    float: right !important;
+}
+.sidenav img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+.sidenav .circle {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+.sidenav .user-view .name {
+    margin-top: 10px;
+}
+.white-text {
+    color: gray;
+}
+
+
+/* MAIN ================================================ */
+main {
+    /*border: 2px solid green;*/
+    display: block;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 5vw;
+    margin-right: 15vw;
+    padding-right: 15vw;
+}
+.main-flex-container {
+    /*border: 2px dashed green;*/
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    justify-content: center;
+}
+
+#to-top-button {
+    background-color: #616161 !important;
+}
+
+.jumbotron {
+    position: relative;
+    height: auto;
+}
+.jumbotron h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 3.2rem;
+}
+
+.btn { margin-right: 5px; margin-bottom: 10px;}
+.btn:hover { color: white; }
+
+/*http://mediag.com/news/popular-screen-resolutions-designing-for-all/*/
+/* X-LARGE SCREENS */
+@media (min-width: 992px) {
+    nav {
+        margin: 20px;
+        padding-right: 60px;
+        height: 10vh;
+    }
+    #brand-img {
+        /*border: 2px dashed orange;*/
+        height: 8vh;
+        width: auto;
+    }
+   .jumbotron {
+        width: 100%;
+    }
+    .card, .main-para {
+        width: 87.5%;
+        padding: 1vw 3vw 1vw 3vw;
+    }
+    .post img {
+        width: 50vw;
+        height: auto;
+    }
+    .modal-img {
+        position: relative;
+        display: inline-block;
+        width: 40vw;
+        height: auto;
+    }
+}
+/* LARGE SCREENS */
+@media (max-width: 991px) {
+    nav {
+        margin: 20px 0px 20px 10px;
+        padding-right: 20px;
+        height: 10vh;
+    }
+    #brand-img {
+        /*border: 2px dashed orange;*/
+        height: 8vw;
+        width: auto;
+    }
+    .hide-on-med-and-down {
+        display: none;
+    }
+    .jumbotron {
+        width: 100%;
+    }
+    .card, .main-para {
+        width: 100%;
+        padding: 1vw 5vw 1vw 5vw;
+    }
+    .post img {
+        width: 75vw;
+        height: auto;
+    }
+    .modal-img {
+        position: relative;
+        display: inline-block;
+        width: 40vw;
+        height: auto;
+    }
+}
+/* MEDIUM SCREENS */
+@media (max-width: 767px) {
+    nav {
+        padding-right: 10px;
+    }
+    #brand-img {
+        /*border: 2px dashed orange;*/
+        height: 8vw;
+        width: auto;
+    }
+    .modal-img {
+        position: relative;
+        display: inline-block;
+        width: 70vw;
+        height: auto;
+    }
+}
+/* SMALL SCREENS */
+@media (max-width: 479px) {
+    #nav_first_name {
+        font-size: 3rem;
+    }
+    #nav_last_name {
+        font-size: 2rem;
+    }
+    .modal-img {
+        position: relative;
+        display: inline-block;
+        width: 70vw;
+        height: auto;
+    }
+}
+
+h3 {
+    text-transform: UPPERCASE;
+    color: #0f9d58; /* google hangouts green */
+    font-family: 'Work Sans', 'Open Sans', sans-serif;
+    font-size: 2rem;
+}
+
+a, a:hover {
+    color: #0000ca;
+    text-decoration: none;
+}
+.body-para, main ul, main ol {
+    font-size: 1.2rem !important;
+}
+main img {
+    position: relative;
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+.valign-middle {
+    vertical-align: middle;
+}
+
+.caption {
+	margin-top: 16px;
+	position: relative;
+}
+#addIdDiv {
+    color: #FF4747;
+    font-weight: bold;
+}
+#polar-pi-img {
+	display: block;
+	margin-top: 24%;
+    margin-bottom: 24%;
+	position: relative;
+	-ms-transform: rotate(90deg); /* IE 9 */
+	-moz-transform: rotate(90deg); /* Mozilla */
+	-o-transform: rotate(90deg); /* Opera? */
+	-webkit-transform: rotate(90deg); /* Safari and Chrome */
+	transform: rotate(90deg);
+}
+#america {
+	color: #FF4747;
+	font-weight: bold;
+}
+#pi-symbol {
+	color: #FF4747;
+	font-family: Cambria;
+	font-size: 24px;
+}
+#starbucks {
+    font-weight: bold;
+	color: rgb(0, 89, 45);
+}
+
+
+/* FAVORITES ============================================= */
+.tag-row       { margin-left: 0; }
+.active-post   { display: block; }
+.inactive-post { display: none; }
+.review        { padding-bottom:20px; }
+.title         { margin-top: 30px; margin-bottom: 15px; }
+.author        { font-size: 2.6rem; }
+
+@media (max-width: 460px) {
+    .title          { font-size: 3rem; }
+    .author         { font-size: 2.4rem; }
+    .review p, .review ul, .review.btn  { font-size: 2rem !important; }
+}
+
+.review .btn           { font-weight: bold; }
+.review p, .review ul, .review.btn { font-size: 1.6rem !important; }
+
+.book-img {
+    position: relative;
+    display: inline-block;
+    height: 30vh !important;
+    width: auto !important;
+    margin-top: 30px;
+}
+
+#black-hole-spoiler {
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.5rem;
+    /*padding-left: 20px;*/
+    /*padding-right: 20px;*/
+}
+#outliers-factors, .sub-list {
+    padding-left: 15px;
+}
+
+.square-bulleted {
+    list-style-type: square;
+}
+
+
+/* QUOTES ================================================ */
+.quotes-btn {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.quotes {
+    font-size: 1.4rem !important;
+    padding-bottom: 30px;
+}
+.quote-author {
+    display: block;
+    padding-top: 10px;
+}
+.info {
+    position: relative;
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    background-color: #616161;
+    border-radius: 50%;
+    float: right;
+    top: -5px;
+    left: 25px;
+}
+.info-i {
+    display: inline-block;
+    position: relative;
+    color: white;
+    font-size: 16px;
+    top: 1px;
+}
+.quotes-modal p {
+    font-size: 1.3rem !important;
+}
+.block {
+    display: block;
+}
+
+/* FOOTER ================================================ */
+footer {
+    /*border: 2px solid blue;*/
+    width: 100%;
+}
+.footer-flex-container {
+    position: absolute;
+    width: 79%;    
+}
+.footer-credit {
+    text-align: right;
+    position: relative;
+    margin-left: 0;
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+    color: gray;
+    font-size: 14px;
+    height: 30px;
+    vertical-align: middle;
+}
+.foot-name-link {
+    margin-right: 5px;
+}
+.glyphs {
+    vertical-align: middle !important;
+    height: 18px;
+    width: auto;
+}
+.glyphs:hover, glyphs:active {
+    height: 20px;
+    width: auto;
+}
+/* any font awesome icon */
+.fab, .fas {
+    color: black;
+    font-size: 1.5rem !important;
+}
+.fa-spotify, .fa-instagram {
+    padding: 4px !important;
+}
+.fa-globe {
+    margin-left: 8px;
+}
+
+/*COLORS*/
+.TED-red     { color: RGB(230, 30, 30); }
+.deep-blue   { color: #0000ca; }
+    /* spotify green */
+    /*color: #1db954;*/
+    /* koding's logo green */
+    /*color: #00B057;*/ 
+    /* "grass" green */
+    /*color: #00b300; */
+    /* irish flag green */
+    /*color: #009900;*/
+    /* materialize accent-4 */
+    /*color: #00c853;*/
+    /* starbucks green */
+    /*color: #00704a;*/
+    /* deep blue */
+    /*color: #0000ca;*/
+    
+
+/* TESTS ===================================== */
+.row {
+    /*border: 2px solid blue;*/
+}
+.col {
+    /*border: 2px solid green;*/
+}
+.extra-col {
+    /*border: 2px solid red;*/
+}
