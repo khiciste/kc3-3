@@ -1,6 +1,8 @@
-/* KEVINCLELAND.COM v3.0 */
+/* KEVINCLELAND.COM v3.3 */
 /* https://css-tricks.com/box-sizing/ */
 /* https://brandcolors.net/ */
+/* https://daneden.github.io/animate.css/ */
+/* pixelbook resolution: 2,400 x 1,600 */
 
 html {
   box-sizing: border-box;
@@ -69,11 +71,12 @@ nav, .nav-wrapper {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 2.4rem;
     padding-top: 10px;
 }
 #brand-img {
-    /*display: inline-block;*/
+    display: inline-flex;
+    margin-left: 30px;
 }
 #brand-title {
     padding-left: 10px;
@@ -165,6 +168,10 @@ main {
 .jumbotron h1 {
     font-family: 'Work Sans', sans-serif;
     font-size: 3.2rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .btn { margin-right: 5px; margin-bottom: 10px;}
