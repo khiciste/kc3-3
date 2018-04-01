@@ -3,8 +3,9 @@ $(document).ready(function() {
     var i = 47;
     var totalQuotes = $('.quotes').length;
     
-    // hide all quotes, then display 1st quote
+    // hide all quotes and numbers, then display 1st quote
     $('.quotes').css({"display": "none"});
+    // $('.quote-numbers').css({"visibility": "visible"});
     $("#quote-" + i).css({"display": "block"});
     
     // display selected quotes
@@ -12,6 +13,27 @@ $(document).ready(function() {
         var quotesToDisplay = tag;
         quotesToDisplay.css({"display": "block"});
     }
+    
+    // number each quote 
+    function numberAllQuotes() {
+        $('.quotes').each(function(index) {
+            $(this).find('.quote-numbers').text("#" + ++index);
+        }); 
+    }
+    
+    numberAllQuotes();
+    
+    // toggle quote numbers visibility 
+    $("#quote-numbers-box").click(function() {
+        $('.quote-numbers').toggleClass("hidden");
+    })
+    
+    // display all quote numbers
+    function displayQuoteNumbers() {
+        $('.quote-numbers').css({"display": "block"}); 
+    }
+    
+    // displayQuoteNumbers();
     
     // show all button
     $("#all-quotes-btn").click(function() {

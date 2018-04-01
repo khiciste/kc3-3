@@ -45,8 +45,18 @@ body           { font-family: 'Roboto', 'Open Sans', sans-serif; }
 .centered-text {
     text-align: center;
 }
-.hidden {
+.display-none {
     display: none;
+}
+.hidden {
+    visibility: hidden;
+}
+.inline-block {
+    display: inline-block;
+}
+.checkbox-black[type="checkbox"]:checked+span:not(.lever):before {
+     border-right: 2px solid black;
+     border-bottom: 2px solid black;
 }
 
 /* HEADER ================================================ */
@@ -355,85 +365,6 @@ main img {
 	color: rgb(0, 89, 45);
 }
 
-
-/* FAVORITES ============================================= */
-.tag-row       { margin-left: 0; }
-.active-post   { display: block; }
-.inactive-post { display: none; }
-.review        { padding-bottom:20px; }
-.title         { margin-top: 30px; margin-bottom: 15px; }
-.author        { font-size: 2.6rem; }
-
-@media (max-width: 460px) {
-    .title          { font-size: 3rem; }
-    .author         { font-size: 2.4rem; }
-    .review p, .review ul, .review.btn  { font-size: 2rem !important; }
-}
-
-.review .btn           { font-weight: bold; }
-.review p, .review ul, .review.btn { font-size: 1.6rem !important; }
-
-.book-img {
-    position: relative;
-    display: inline-block;
-    height: 30vh !important;
-    width: auto !important;
-    margin-top: 30px;
-}
-
-#black-hole-spoiler {
-    color: red;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 1.5rem;
-    /*padding-left: 20px;*/
-    /*padding-right: 20px;*/
-}
-#outliers-factors, .sub-list {
-    padding-left: 15px;
-}
-
-.square-bulleted {
-    list-style-type: square;
-}
-
-
-/* QUOTES ================================================ */
-.quotes-btn {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.quotes {
-    font-size: 1.4rem !important;
-    padding-bottom: 30px;
-}
-.quote-author {
-    display: block;
-    padding-top: 10px;
-}
-.info {
-    position: absolute;
-    /*display: inline-block;*/
-    right: 10px;
-    margin-top: -2px;
-    height: 24px;
-    width: 24px;
-    background-color: #616161;
-    border-radius: 50%;
-}
-.info-i {
-    display: inline-block;
-    position: relative;
-    color: white;
-    font-size: 16px;
-    top: 1px;
-}
-.quotes-modal p {
-    font-size: 1.3rem !important;
-}
-.block {
-    display: block;
-}
 
 /* FOOTER ================================================ */
 footer {

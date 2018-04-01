@@ -36,7 +36,7 @@ input {
     position: relative;
     width: 10vw;
     height: 10vw;
-    margin-left: 1vw;
+    margin-left: 0;
     margin-right: 1vw;
     padding: 0;
 }
@@ -44,8 +44,8 @@ input {
     /*border: 2px dashed red;*/
     position: absolute;
     background: white;
-    height: 10vw;
-    width: 10vw;
+    height: 9.5vw;
+    width: 9.5vw;
     border-radius: 50%;
     font-size: 3.5vw;
     color: black;
