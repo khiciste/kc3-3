@@ -24,13 +24,34 @@ body           { font-family: 'Roboto', 'Open Sans', sans-serif; }
 
 /* FONT STYLES */
 .bold          { font-weight: bold; }
-.CAPS          { text-transform: UPPERCASE; }
 .italics       { font-style: italic; }
-
+.CAPS          { text-transform: UPPERCASE; }
+.superscript   { vertical-align: super; }
+.subscript     { vertical-align: sub; }
+.centered-text { text-align: center; }
+.display-none  { display: none; }
+.hidden        { visibility: hidden; }
+.inline-block  { display: inline-block; }
 
 /* COLORS */
-.hangouts-green { background-color: #0f9d58; }
-.hangouts-green:hover { background-color: #0f9d58; }
+.hangouts-green            { color: #0f9d58; }
+.hangouts-green-bg         { background-color: #0f9d58; }
+.hangouts-green-bg:hover   { background-color: #0f9d58; }
+.spotify-green             { color: #1db954; }
+.TED-red                   { color: RGB(230, 30, 30); }
+.deep-blue                 { color: #0000ca; }
+    /* spotify green */
+    /*color: #1db954;*/
+    /* koding's logo green */
+    /*color: #00B057;*/ 
+    /* "grass" green */
+    /*color: #00b300; */
+    /* irish flag green */
+    /*color: #009900;*/
+    /* materialize accent-4 */
+    /*color: #00c853;*/
+    /* starbucks green */
+    /*color: #00704a;*/
 
 .container {
     /*border: 4px solid black;*/
@@ -42,18 +63,7 @@ body           { font-family: 'Roboto', 'Open Sans', sans-serif; }
     margin-left: auto !important;
     margin-right: auto !important;
 }
-.centered-text {
-    text-align: center;
-}
-.display-none {
-    display: none;
-}
-.hidden {
-    visibility: hidden;
-}
-.inline-block {
-    display: inline-block;
-}
+
 .checkbox-black[type="checkbox"]:checked+span:not(.lever):before {
      border-right: 2px solid black;
      border-bottom: 2px solid black;
@@ -171,6 +181,10 @@ main {
     background-color: #616161 !important;
 }
 
+h1 {
+    margin-top: 1.68rem;
+    margin-bottom: 1.68rem;
+}
 .jumbotron {
     position: relative;
     height: auto;
@@ -181,7 +195,9 @@ main {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    
+}
+.jumbotron p {
+    margin-top: 0;
 }
 
 .btn { margin-right: 5px; margin-bottom: 10px;}
@@ -389,6 +405,14 @@ footer {
 .foot-name-link {
     margin-right: 0;
 }
+.first-name {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: black;
+}
+.last-name {
+    color: black;
+}
 .glyphs {
     vertical-align: middle !important;
     height: 18px;
@@ -401,33 +425,16 @@ footer {
 /* any font awesome icon */
 .fab, .fas {
     color: black;
-    font-size: 1.5rem !important;
-}
-.fa-spotify, .fa-instagram {
+    font-size: 1.6rem !important;
     padding: 4px !important;
 }
-.fa-globe {
+.fa-spotify {
+    margin-left: 4px;
+}
+.icons-span {
     margin-left: 8px;
 }
 
-/*COLORS*/
-.TED-red     { color: RGB(230, 30, 30); }
-.deep-blue   { color: #0000ca; }
-    /* spotify green */
-    /*color: #1db954;*/
-    /* koding's logo green */
-    /*color: #00B057;*/ 
-    /* "grass" green */
-    /*color: #00b300; */
-    /* irish flag green */
-    /*color: #009900;*/
-    /* materialize accent-4 */
-    /*color: #00c853;*/
-    /* starbucks green */
-    /*color: #00704a;*/
-    /* deep blue */
-    /*color: #0000ca;*/
-    
 
 /* TESTS ===================================== */
 .row {

@@ -1,7 +1,5 @@
 /* DO NOT CHANGE */
-/*
-    CSS will apply to dynamically generated cards
-*/
+/* CSS will apply to dynamically generated cards */
 
 body {
     color: #212121;
@@ -102,10 +100,10 @@ h6 {
 /* X-LARGE SCREENS AND UP */
 @media (min-width: 992px) {
   .card {
-    width: 700px;
+    width: 800px;
   }
   img {
-    width: 400px;
+    width: 375px;
     height: auto;
   }
 }
@@ -118,7 +116,8 @@ h6 {
     width: 250px;
     height: auto;
   }
-}/* MEDIUM SCREENS AND DOWN */
+}
+/* MEDIUM SCREENS AND DOWN */
 @media (max-width: 767px) {
   .card {
     width: 600px;

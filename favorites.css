@@ -1,5 +1,6 @@
 /* FAVORITES ============================================= */
-.tag-row       { margin-left: 0; }
+.row           { margin-bottom: 0; }
+.tag-row       { margin-left: 0; margin-bottom: 0; }
 .tag .btn      { font-weight: normal; }
 .active-post   { display: block; }
 .inactive-post { display: none; }
@@ -29,8 +30,6 @@
     font-style: italic;
     font-weight: bold;
     font-size: 1.5rem;
-    /*padding-left: 20px;*/
-    /*padding-right: 20px;*/
 }
 #outliers-factors, .sub-list {
     padding-left: 15px;
