@@ -1,6 +1,6 @@
 $(document).ready(function() {
     
-    var i = 47;
+    var i = 48;
     var totalQuotes = $('.quotes').length;
     
     // hide all quotes and numbers, then display 1st quote
@@ -18,6 +18,8 @@ $(document).ready(function() {
     function numberAllQuotes() {
         $('.quotes').each(function(index) {
             $(this).find('.quote-numbers').text("#" + ++index);
+            $(this).find('.quote-para').attr("id", "quote-" + index + "-para");
+            $(this).find('.copy-btn').val(index);
         }); 
     }
     
@@ -26,14 +28,7 @@ $(document).ready(function() {
     // toggle quote numbers visibility 
     $("#quote-numbers-box").click(function() {
         $('.quote-numbers').toggleClass("hidden");
-    })
-    
-    // display all quote numbers
-    function displayQuoteNumbers() {
-        $('.quote-numbers').css({"display": "block"}); 
-    }
-    
-    // displayQuoteNumbers();
+    });
     
     // show all button
     $("#all-quotes-btn").click(function() {
@@ -63,4 +58,27 @@ $(document).ready(function() {
         $('.quotes').css({"display": "none"});
         displaySelectedQuotes($("#quote-" + randomIndex));
     });
+
+    // copy quote button
+    $('.copy-btn').click(function() {
+        
+        var quoteNumber = $(this).val();
+        
+        // create a temporary text area to stash quote text
+        var $temp = $("<textarea>");
+        var brRegex = /<br\s*[\/]?>/gi;
+        var spanRegex = /<span class="CAPS quote-author">/gi;
+        var closeSpanRegex = /<\/span>/gi;
+        var italicsRegex = /<span class="italics">/gi;
+        
+        $("body").append($temp);
+        
+        $temp.val($("#quote-" + quoteNumber + "-para").html().replace(brRegex, "\r\n").replace(spanRegex, "").replace(closeSpanRegex, "").replace(italicsRegex, "")).select();
+        
+        document.execCommand("copy");
+        $temp.remove();
+        
+        M.toast({html: 'Quote copied'});
+    });
+
 })
