@@ -1,7 +1,8 @@
 $(document).ready(function() {
     
-    var i = 48;
+    // var i = 43;
     var totalQuotes = $('.quotes').length;
+    var i = Math.floor(Math.random() * totalQuotes + 1);
     
     // hide all quotes and numbers, then display 1st quote
     $('.quotes').css({"display": "none"});
