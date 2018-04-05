@@ -1,8 +1,8 @@
 $(document).ready(function() {
     
-    // var i = 43;
+    var i = 50;
     var totalQuotes = $('.quotes').length;
-    var i = Math.floor(Math.random() * totalQuotes + 1);
+    // var i = Math.floor(Math.random() * totalQuotes + 1);
     
     // hide all quotes and numbers, then display 1st quote
     $('.quotes').css({"display": "none"});
@@ -18,8 +18,13 @@ $(document).ready(function() {
     // number each quote 
     function numberAllQuotes() {
         $('.quotes').each(function(index) {
+            // give each card a numbered ID -- currently doing manually in HTML for readability
+            // $(this).find('.quotes').attr("id", "quote-" + index);
+            // add #number to each quote's quote-numbers span
             $(this).find('.quote-numbers').text("#" + ++index);
+            // add a numbered ID to each quote-para -- not currently in use
             $(this).find('.quote-para').attr("id", "quote-" + index + "-para");
+            // add a value to each copy-button -- used by copy function below
             $(this).find('.copy-btn').val(index);
         }); 
     }
