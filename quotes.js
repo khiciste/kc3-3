@@ -40,6 +40,7 @@ $(document).ready(function() {
     $("#all-quotes-btn").click(function() {
         i = 1;
         displaySelectedQuotes($('.quotes'));
+        $("#quote-___").css({ "display": "none" });
     });
     
     // next quote button
@@ -72,18 +73,25 @@ $(document).ready(function() {
         
         // create a temporary text area to stash quote text
         var $temp = $("<textarea>");
+        // HTML to remove from quote 
         var brRegex = /<br\s*[\/]?>/gi;
         var spanRegex = /<span class="CAPS quote-author">/gi;
         var closeSpanRegex = /<\/span>/gi;
         var italicsRegex = /<span class="italics">/gi;
         
+        // temporarily add the text area to the body
         $("body").append($temp);
         
+        // add the text from the the quote to the text area, 
+        // strip all the HTML, replace <br /> with \n
         $temp.val($("#quote-" + quoteNumber + "-para").html().replace(brRegex, "\r\n").replace(spanRegex, "").replace(closeSpanRegex, "").replace(italicsRegex, "")).select();
         
+        // copy the text
         document.execCommand("copy");
+        // remove the temporary text area
         $temp.remove();
         
+        // notify the user copy was successful
         M.toast({html: 'Quote copied'});
     });
 

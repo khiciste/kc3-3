@@ -24,12 +24,12 @@ body           { font-family: 'Roboto', 'Open Sans', sans-serif; }
 
 /* FONT STYLES */
 .bold          { font-weight: bold; }
+.thin          { font-weight: 200; }
 .italics       { font-style: italic; }
 .CAPS          { text-transform: UPPERCASE; }
 .superscript   { vertical-align: super; }
 .subscript     { vertical-align: sub; }
 .centered-text { text-align: center; }
-.display-none  { display: none; }
 .hidden        { visibility: hidden; }
 .inline-block  { display: inline-block; }
 
@@ -60,6 +60,9 @@ body           { font-family: 'Roboto', 'Open Sans', sans-serif; }
     margin-left: auto !important;
     margin-right: auto !important;
 }
+
+.display-none { display: none; }
+
 .rotate45 {
     transform: rotate(-45deg);
 }

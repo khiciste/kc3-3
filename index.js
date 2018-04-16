@@ -9,6 +9,9 @@ $(document).ready(function() {
     // MODAL INITIALIZATION
     $('.modal').modal();
     
+    // COLLAPSIBLE INITIALIZATION
+    $('.collapsible').collapsible();
+    
     // CLASSES FLOATING ACTION BUTTON
     $("#classes-btn").floatingActionButton({
         'direction': 'right',

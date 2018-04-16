@@ -69,15 +69,14 @@ h6 {
     width: 100%;
 }
 .card {
-    /*width: 700px;*/
     height: 600px;
-    border: 1px solid #757575;
+    /*border: 1px solid #757575;*/
     display: inline-block;
     margin: 10px;
     padding: 10px;
     overflow: hidden;
     position: relative;
-    box-shadow: 5px 5px 3px #888888;
+    /*box-shadow: 5px 5px 3px #888888;*/
 }
 .card-title, .subtitle {
     text-transform: UPPERCASE;
@@ -99,7 +98,7 @@ h6 {
 /* CARD SIZES ====================================== */
 /* X-LARGE SCREENS AND UP */
 @media (min-width: 992px) {
-  .card {
+  .card, .collapsible {
     width: 800px;
   }
   img {
@@ -109,7 +108,7 @@ h6 {
 }
 /* LARGE SCREENS AND DOWN */
 @media (max-width: 991px) {
-  .card {
+  .card, .collapsible {
     width: 500px;
   }
   img {
@@ -119,7 +118,7 @@ h6 {
 }
 /* MEDIUM SCREENS AND DOWN */
 @media (max-width: 767px) {
-  .card {
+  .card, .collapsible {
     width: 600px;
   }
   img {
@@ -132,7 +131,7 @@ h6 {
 }
 /* SMALL SCREENS */
 @media (max-width: 479px) {
-  .card {
+  .card, .collapsible {
     width: 350px;
     max-height: 700px;
   }
@@ -154,4 +153,13 @@ h6 {
 
 .subtitle {
     font-size: 18px;
+}
+
+.collapsible-header {
+    font-size: 24px;
+}
+
+.collapsible-body {
+    border: none;
+    box-shadow: none;
 }
