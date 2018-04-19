@@ -46,14 +46,18 @@ $(document).ready(function() {
     // next quote button
     $("#next-quote-btn").click(function() {
         i++;
-        if (i > totalQuotes) { i = 1; }
+        // reset to 1 if at end -- note: - 1 here skips the blank quote template at end (not an off-by-one thing -- i = quote # here)
+        if (i > totalQuotes - 1) { i = 1; }
+        // hide all quotes, the show the next one
         $('.quotes').css({"display": "none"});
         displaySelectedQuotes($("#quote-" + i));
     });
     // previous quote button
     $("#prev-quote-btn").click(function() {
         i--;
-        if (i == 0) { i = totalQuotes; }
+        // reset to 1 if at end -- note: - 1 here skips the blank quote template at end (not an off-by-one thing -- i = quote # here)
+        if (i == 0) { i = totalQuotes - 1; }
+        // hide all quotes, then show the previous one
         $('.quotes').css({"display": "none"});
         displaySelectedQuotes($("#quote-" + i));
     });
