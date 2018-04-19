@@ -15,7 +15,7 @@ $(document).ready(function() {
             "opacity": "1.0"//,
 			// "font-size": "1.5rem"
         });
-        $('.post').addClass('display-none');
+        $('.post').removeClass('active-post').addClass('display-none');
         var tag_clicked = $(this).attr("id");
         $('.' + tag_clicked).removeClass('display-none').addClass('active-post');
     });
@@ -23,7 +23,7 @@ $(document).ready(function() {
     // ALL BUTTON
     $("#all").click(function() {
         $('.post').removeClass('display-none').addClass('active-post');
-        $("#template-post").addClass('display-none');
+        $("#template-post").removeClass('active-post').addClass('display-none');
     });
     
 })
