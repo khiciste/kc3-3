@@ -31,6 +31,7 @@ body           { font-family: 'Roboto', 'Open Sans', sans-serif; }
 .subscript     { vertical-align: sub; }
 .centered-text { text-align: center; }
 .hidden        { visibility: hidden; }
+.block         { display: block; }
 .inline-block  { display: inline-block; }
 
 /* COLORS */
@@ -41,6 +42,7 @@ body           { font-family: 'Roboto', 'Open Sans', sans-serif; }
 .TED-red                   { color: RGB(230, 30, 30); }
 .deep-blue                 { color: #0000ca; }
 .gray-bg                   { background-color: #616161; }
+.disabled-lighten          { opacity: 0.3; }
     /* spotify green */
     /*color: #1db954;*/
     /* koding's logo green */
@@ -61,7 +63,7 @@ body           { font-family: 'Roboto', 'Open Sans', sans-serif; }
     margin-right: auto !important;
 }
 
-.display-none { display: none; }
+.display-none { display: none !important; }
 
 .rotate45 {
     transform: rotate(-45deg);

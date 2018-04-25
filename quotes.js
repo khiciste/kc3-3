@@ -1,6 +1,6 @@
 $(document).ready(function() {
     
-    var i = 50;
+    var i = 60;
     var totalQuotes = $('.quotes').length;
     // var i = Math.floor(Math.random() * totalQuotes + 1);
     
@@ -96,7 +96,7 @@ $(document).ready(function() {
         $temp.remove();
         
         // notify the user copy was successful
-        M.toast({html: 'Quote copied'});
+        M.toast({html: 'Quote copied', displayLength: 2000 });
     });
 
 })
