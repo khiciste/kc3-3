@@ -1,18 +1,57 @@
 $(document).ready(function() {
     
-    var i = 60;
+    var i = 61;
     var totalQuotes = $('.quotes').length;
     // var i = Math.floor(Math.random() * totalQuotes + 1);
     
     // hide all quotes and numbers, then display 1st quote
     $('.quotes').css({"display": "none"});
     // $('.quote-numbers').css({"visibility": "visible"});
-    $("#quote-" + i).css({"display": "block"});
+    // not necessary here anymore -- current quote is displayed in...
+    // ...URL handling below 
+    // $("#quote-" + i).css({"display": "block"});
     
     // display selected quotes
     function displaySelectedQuotes(tag) {
         var quotesToDisplay = tag;
         quotesToDisplay.css({"display": "block"});
+        updateURL();
+    }
+    // update URL to include current quote number
+    function updateURL() {
+        history.pushState(null, '', ("/quotes.html#quote-" + i).toString());
+    }
+    
+    // get current URL
+    var currentURL = $(location).attr('href');
+    
+    // contains #- (as in #quote-42 from a share link someone else)
+    if (currentURL.includes("#quote-")) {
+        // strip all text from URL up to and including the dash
+        // (i.e., just get the number for the quote and set it to i)
+        // 1. find location of #- (quote number will succeed #-)
+        //    - needs + 7 for length of str #quote-
+        var quoteNumberPosition = currentURL.indexOf("#quote-") + 7;
+        // 2. get length of current URL
+        var lengthOfURL = currentURL.length;
+        // 3. remove all other text from before #quote- to end 
+        var quoteNumber = currentURL.slice(quoteNumberPosition, lengthOfURL);
+        // 4. pass quote # to display quotes function
+        i = quoteNumber;
+        displaySelectedQuotes($("#quote-" + i));
+    }
+    // contains #! (from closing modal)
+    // else if (currentURL.includes("#!")) {
+    //     // test
+    //     // $("#page-title").text(currentURL);
+    //     // display previous quote 
+    //     // (for testing purposes only -- reset to current when good)
+    //     i--;
+    //     displaySelectedQuotes($("#quote-" + i));
+    // }
+    else {
+        // display current quote
+        displaySelectedQuotes($("#quote-" + i));
     }
     
     // number each quote 
@@ -40,24 +79,25 @@ $(document).ready(function() {
     $("#all-quotes-btn").click(function() {
         i = 1;
         displaySelectedQuotes($('.quotes'));
-        $("#quote-___").css({ "display": "none" });
+            // keep the template hidden
+            $("#quote-___").css({ "display": "none" });
     });
     
-    // next quote button
-    $("#next-quote-btn").click(function() {
-        i++;
-        // reset to 1 if at end -- note: - 1 here skips the blank quote template at end (not an off-by-one thing -- i = quote # here)
-        if (i > totalQuotes - 1) { i = 1; }
-        // hide all quotes, the show the next one
-        $('.quotes').css({"display": "none"});
-        displaySelectedQuotes($("#quote-" + i));
-    });
     // previous quote button
     $("#prev-quote-btn").click(function() {
         i--;
         // reset to 1 if at end -- note: - 1 here skips the blank quote template at end (not an off-by-one thing -- i = quote # here)
         if (i == 0) { i = totalQuotes - 1; }
         // hide all quotes, then show the previous one
+        $('.quotes').css({"display": "none"});
+        displaySelectedQuotes($("#quote-" + i));
+    });
+    // next quote button
+    $("#next-quote-btn").click(function() {
+        i++;
+        // reset to 1 if at end -- note: - 1 here skips the blank quote template at end (not an off-by-one thing -- i = quote # here)
+        if (i > totalQuotes - 1) { i = 1; }
+        // hide all quotes, the show the next one
         $('.quotes').css({"display": "none"});
         displaySelectedQuotes($("#quote-" + i));
     });

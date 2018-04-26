@@ -27,7 +27,7 @@ body           { font-family: 'Roboto', 'Open Sans', sans-serif; }
 .thin          { font-weight: 200; }
 .italics       { font-style: italic; }
 .CAPS          { text-transform: UPPERCASE; }
-.superscript   { vertical-align: super; }
+.superscript   { vertical-align: super; font-size: 1rem; }
 .subscript     { vertical-align: sub; }
 .centered-text { text-align: center; }
 .hidden        { visibility: hidden; }
