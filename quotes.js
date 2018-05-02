@@ -1,8 +1,12 @@
 $(document).ready(function() {
     
-    var i = 61;
+    var i = 23;
     var totalQuotes = $('.quotes').length;
+    // to begin with a random quote
     // var i = Math.floor(Math.random() * totalQuotes + 1);
+    // get current URL
+    var url = window.location.href;
+        // var url = $(location).attr('href'); -- alt method
     
     // hide all quotes and numbers, then display 1st quote
     $('.quotes').css({"display": "none"});
@@ -20,13 +24,15 @@ $(document).ready(function() {
     // update URL to include current quote number
     function updateURL() {
         history.pushState(null, '', ("/quotes.html#quote-" + i).toString());
+            // do not work
+            // window.location.assign("https://preview.c9users.io/quotes.html#quote-" + i);
+            // history.pushState({ urlPath: '/quotes.html#quote-' + i}, "", '/quotes.html#quote-' + i );
+            // currentURL.reload(true); -- does not work
+            // window.location.search += ("/quotes.html#quote-" + i).toString(); -- causes constant loading
     }
     
-    // get current URL
-    var currentURL = $(location).attr('href');
-    
     // contains #- (as in #quote-42 from a share link someone else)
-    if (currentURL.includes("#quote-")) {
+    if (url.includes("#quote-")) {
         // strip all text from URL up to and including the dash
         // (i.e., just get the number for the quote and set it to i)
         // 1. find location of #- (quote number will succeed #-)
@@ -40,14 +46,14 @@ $(document).ready(function() {
         i = quoteNumber;
         displaySelectedQuotes($("#quote-" + i));
     }
-    // contains #! (from closing modal)
-    // else if (currentURL.includes("#!")) {
+    // contains all (from closing modal)
+    // else if (url.includes("#all")) {
     //     // test
     //     // $("#page-title").text(currentURL);
-    //     // display previous quote 
-    //     // (for testing purposes only -- reset to current when good)
-    //     i--;
-    //     displaySelectedQuotes($("#quote-" + i));
+    //     // display all quotes 
+    //     displaySelectedQuotes($('.quotes'));
+    //         // keep the template hidden
+    //         $("#quote-___").css({ "display": "none" });
     // }
     else {
         // display current quote
