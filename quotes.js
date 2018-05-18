@@ -1,68 +1,51 @@
 $(document).ready(function() {
-    
-    var i = 23;
+
+  // ON STARTUP! ====================================================
+    var allQuotes = $('.quotes');
     var totalQuotes = $('.quotes').length;
-    // to begin with a random quote
-    // var i = Math.floor(Math.random() * totalQuotes + 1);
     // get current URL
-    var url = window.location.href;
-        // var url = $(location).attr('href'); -- alt method
-    
-    // hide all quotes and numbers, then display 1st quote
-    $('.quotes').css({"display": "none"});
-    // $('.quote-numbers').css({"visibility": "visible"});
-    // not necessary here anymore -- current quote is displayed in...
-    // ...URL handling below 
-    // $("#quote-" + i).css({"display": "block"});
-    
-    // display selected quotes
-    function displaySelectedQuotes(tag) {
-        var quotesToDisplay = tag;
-        quotesToDisplay.css({"display": "block"});
-        updateURL();
-    }
-    // update URL to include current quote number
-    function updateURL() {
-        history.pushState(null, '', ("/quotes.html#quote-" + i).toString());
-            // do not work
-            // window.location.assign("https://preview.c9users.io/quotes.html#quote-" + i);
-            // history.pushState({ urlPath: '/quotes.html#quote-' + i}, "", '/quotes.html#quote-' + i );
-            // currentURL.reload(true); -- does not work
-            // window.location.search += ("/quotes.html#quote-" + i).toString(); -- causes constant loading
-    }
-    
-    // contains #- (as in #quote-42 from a share link someone else)
-    if (url.includes("#quote-")) {
+    // var url = window.location.href;
+    // begin with quotes numbered
+    numberAllQuotes();
+    // set a default quote to open with
+        // var i = 23;
+    // to begin with a random quote
+    var i = Math.floor(Math.random() * totalQuotes + 1);
+  // ================================================================
+
+
+    // check URL to display the requested quote(s)
+    var hashTag = window.location.hash;
+    if (hashTag.includes("#quote-")) {
         // strip all text from URL up to and including the dash
         // (i.e., just get the number for the quote and set it to i)
         // 1. find location of #- (quote number will succeed #-)
         //    - needs + 7 for length of str #quote-
-        var quoteNumberPosition = currentURL.indexOf("#quote-") + 7;
+        var quoteNumberPosition = hashTag.indexOf("#quote-") + 7;
         // 2. get length of current URL
-        var lengthOfURL = currentURL.length;
+        var lengthOfHash = hashTag.length;
         // 3. remove all other text from before #quote- to end 
-        var quoteNumber = currentURL.slice(quoteNumberPosition, lengthOfURL);
+        i = hashTag.slice(quoteNumberPosition, lengthOfHash);
         // 4. pass quote # to display quotes function
-        i = quoteNumber;
         displaySelectedQuotes($("#quote-" + i));
+        updateURL("#quote-" + i);
     }
     // contains all (from closing modal)
-    // else if (url.includes("#all")) {
-    //     // test
-    //     // $("#page-title").text(currentURL);
-    //     // display all quotes 
-    //     displaySelectedQuotes($('.quotes'));
-    //         // keep the template hidden
-    //         $("#quote-___").css({ "display": "none" });
-    // }
-    else {
-        // display current quote
-        displaySelectedQuotes($("#quote-" + i));
+    else if (hashTag.includes("#all")) {
+        // display all quotes 
+        displaySelectedQuotes($('.quotes'));
+        updateURL("#all");
     }
-    
+    else {
+        // just display ith quote
+        displaySelectedQuotes($("#quote-" + i));
+        updateURL("");
+    }
+
+
     // number each quote 
     function numberAllQuotes() {
-        $('.quotes').each(function(index) {
+        allQuotes.each(function(index) {
             // give each card a numbered ID -- currently doing manually in HTML for readability
             // $(this).find('.quotes').attr("id", "quote-" + index);
             // add #number to each quote's quote-numbers span
@@ -74,7 +57,23 @@ $(document).ready(function() {
         }); 
     }
     
-    numberAllQuotes();
+    // display selected quotes
+    function displaySelectedQuotes(tag) {
+        // hide all first
+        allQuotes.css({"display": "none"});
+        tag.css({"display": "block"});
+            // keep the template hidden
+            $("#quote-___").css({ "display": "none" });
+    }
+
+    
+    // update URL to include current quote number
+    function updateURL(urlSuffix) {
+        // for c9 testing
+        // history.pushState(null, '', ("/kcleland/kc3-3/quotes.html" + urlSuffix).toString());
+        // for iwishwehadmoretime
+        history.pushState(null, '', ("/quotes.html" + urlSuffix).toString());
+    }
     
     // toggle quote numbers visibility 
     $("#quote-numbers-box").click(function() {
@@ -85,6 +84,7 @@ $(document).ready(function() {
     $("#all-quotes-btn").click(function() {
         i = 1;
         displaySelectedQuotes($('.quotes'));
+        updateURL("#all");
             // keep the template hidden
             $("#quote-___").css({ "display": "none" });
     });
@@ -97,6 +97,7 @@ $(document).ready(function() {
         // hide all quotes, then show the previous one
         $('.quotes').css({"display": "none"});
         displaySelectedQuotes($("#quote-" + i));
+        updateURL("#quote-" + i);
     });
     // next quote button
     $("#next-quote-btn").click(function() {
@@ -106,6 +107,7 @@ $(document).ready(function() {
         // hide all quotes, the show the next one
         $('.quotes').css({"display": "none"});
         displaySelectedQuotes($("#quote-" + i));
+        updateURL("#quote-" + i);
     });
     
     // random quote button
@@ -114,6 +116,7 @@ $(document).ready(function() {
         i = randomIndex;
         $('.quotes').css({"display": "none"});
         displaySelectedQuotes($("#quote-" + randomIndex));
+        updateURL("#quote-" + i);
     });
 
     // copy quote button
