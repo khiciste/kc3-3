@@ -145,7 +145,7 @@ $(document).ready(function() {
         $temp.remove();
         
         // notify the user copy was successful
-        M.toast({html: 'Quote copied', displayLength: 2000 });
+        M.toast({html: 'Quote copied to clipboard', displayLength: 2000 });
     });
 
 })
