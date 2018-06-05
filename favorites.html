@@ -35,9 +35,8 @@
 
 <body id="body">
 
-<div class="container">
-
   <header>
+    <div class="container">
     <nav>
     <div class="nav-wrapper">
       <!-- BRAND -->
@@ -84,17 +83,19 @@
       </ul>
     </div>
   </nav>
-  </header>
-  
-  <!-- TO TOP FLOATING BUTTON -->
-  <div class="fixed-action-btn">
-    <a href="#body" id="to-top-button" class="btn-floating waves-effect right btn-large">
-      <i class="material-icons">keyboard_arrow_up</i>
-    </a>
   </div>
+  </header>
     
   <main>
-  <div class="main-flex-container">
+    <div class="container">
+    <div class="main-flex-container">    
+    
+    <!-- TO TOP FLOATING BUTTON -->
+    <div class="fixed-action-btn">
+      <a href="#body" id="to-top-button" class="btn-floating waves-effect right btn-large">
+        <i class="material-icons">keyboard_arrow_up</i>
+      </a>
+    </div>
     
     <!-- JUMBOTRON --> 
     <div class="jumbotron card">
@@ -387,12 +388,85 @@
               just in the Milky Way always works out to be somewhere in 
               the millions.”
             </p>
+            <p>
+              <!-- drake-equation trigger -->
+              <a class="review waves-effect waves-light indigo darken-4 btn modal-trigger" href="#drake-equation-modal">
+                THE DRAKE EQUATION
+              </a>
+            </p>
         </div>
         <div class="col s10 l3 left-align extra-col"></div>
         <div class="col s10 left left-align extra-col"></div>
         <div class="col s4 center-align extra-col"></div>
       </div><!-- close row -->
     </div>
+      <!-- factors modal -->
+      <div id="drake-equation-modal" class="modal">
+        <div class="modal-content review">
+          <h3>OUR NEAREST NEIGHBORS</h3>
+          <p class="cutive-mono bold">
+            Space, let me repeat, is enormous. The average distance between stars out there is 20 
+            million million miles. Even at speeds approaching those of light, these are fantastically 
+            challenging distances for any traveling individual. Of course, it is possible that alien beings 
+            travel billions of miles to amuse themselves by planting crop circles in Wiltshire or 
+            frightening the daylights out of some poor guy in a pickup truck on a lonely road in Arizona 
+            (they must have teenagers, after all), but it does seem unlikely. 
+          </p>
+
+          <p>
+            Still, statistically the probability that there are other thinking beings out there is good. 
+            Nobody knows how many stars there are in the Milky Way — estimates range from 100 billion 
+            or so to perhaps 400 billion — and the Milky Way is just one of 140 billion or so other 
+            galaxies, many of them even larger than ours. In the 1960s, a professor at Cornell named 
+            Frank Drake, excited by such whopping numbers, worked out a famous equation designed to 
+            calculate the chances of advanced life in the cosmos based on a series of diminishing 
+            probabilities. 
+          </p>
+          
+          <p>
+          Under Drake’s equation you divide the number of stars in a selected portion of the universe 
+          by the number of stars that are likely to have planetary systems; divide that by the number of 
+          planetary systems that could theoretically support life; divide that by the number on which 
+          life, having arisen, advances to a state of intelligence; and so on. At each such division, the 
+          number shrinks colossally — yet even with the most conservative inputs the number of 
+          advanced civilizations just in the Milky Way always works out to be somewhere in the 
+          millions. 
+          </p>
+          
+          <p>
+          What an interesting and exciting thought. We may be only one of millions of advanced 
+          civilizations. Unfortunately, space being spacious, the average distance between any two of 
+          these civilizations is reckoned to be at least two hundred light-years, which is a great deal 
+          more than merely saying it makes it sound. It means for a start that even if these beings know 
+          we are here and are somehow able to see us in their telescopes, they’re watching light that left 
+          Earth two hundred years ago. So they’re not seeing you and me. They’re watching the French 
+          Revolution and Thomas Jefferson and people in silk stockings and powdered wigs — people 
+          who don’t know what an atom is, or a gene, and who make their electricity by rubbing a rod 
+          of amber with a piece of fur and think that’s quite a trick. Any message we receive from them 
+          is likely to begin “Dear Sire,” and congratulate us on the handsomeness of our horses and our 
+          mastery of whale oil. Two hundred light-years is a distance so far beyond us as to be, well, 
+          just beyond us. 
+          </p>
+          
+          <p>
+          So even if we are not really alone, in all practical terms we are. Carl Sagan calculated the 
+          number of probable planets in the universe at large at 10 billion trillion — a number vastly 
+          beyond imagining. But what is equally beyond imagining is the amount of space through 
+          which they are lightly scattered. “If we were randomly inserted into the universe,” Sagan 
+          wrote, “the chances that you would be on or near a planet would be less than one in a billion 
+          trillion trillion.” (That’s 10 , or a one followed by thirty-three zeroes.) “Worlds are precious.”
+          </p>
+          
+          <p>
+          Which is why perhaps it is good news that in February 1999 the International Astronomical 
+          Union ruled officially that Pluto is a planet. The universe is a big and lonely place. We can do 
+          with all the neighbors we can get. 
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="work-sans modal-action modal-close waves-effect waves-black btn-flat">CLOSE</a>
+        </div>
+      </div>
     
     <!-- PREDICTABLY IRRATIONAL -->
     <div class="post card cutive-mono bold non-fiction psychology economics">
@@ -602,14 +676,13 @@
       </div><!-- close row --> 
     </div>
       
-  </div><!-- CLOSE MAIN-FLEX-CONTAINER -->
+    </div><!-- CLOSE MAIN-FLEX-CONTAINER -->
+    </div><!-- CLOSE CONTAINER -->
   </main>
 
   <footer>
+    <div class="container">
     <div class="footer-flex-container">
-    <br />
-    <br />
-    <br />
     
     <!-- kc footer -->
     <p class="footer-credit">site design by 
@@ -629,10 +702,10 @@
     
     <br />
     
-  </div>
+    </div>
+    </div>
   </footer>
   
-</div> <!-- CLOSE CONTAINER -->
 
 </body>
 

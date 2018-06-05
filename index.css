@@ -56,7 +56,19 @@ body           { font-family: 'Roboto', 'Open Sans', sans-serif; }
     /* starbucks green */
     /*color: #00704a;*/
 
+
 /* FORMATTING ======================================= */
+/* for sticky footer */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
 .centered {
     /* MUST HAVE DISPLAY INLINE-BLOCK */
     margin-left: auto !important;
@@ -432,6 +444,7 @@ main img {
 
 
 /* FOOTER ================================================ */
+
 footer {
     /*border: 2px solid blue;*/
     width: 100%;

@@ -9,8 +9,8 @@ $(document).ready(function() {
     numberAllQuotes();
     // set a default quote to open with
         // var i = 23;
-    // to begin with a random quote
-    var i = Math.floor(Math.random() * totalQuotes + 1);
+    // to begin with a random quote -- do not + 1 (there is a blank template quote)
+    var i = Math.floor(Math.random() * totalQuotes);
   // ================================================================
 
 
