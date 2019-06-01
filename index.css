@@ -205,6 +205,8 @@ main {
 
 #to-top-button {
     background-color: #616161 !important;
+    /*background-color: red;*/
+    opacity: 0.6;
 }
 
 h1 {
