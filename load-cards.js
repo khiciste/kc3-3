@@ -22,9 +22,6 @@ cardhtml = `<div class="card">
 element = '#cards';
 
 var courses = ['algebra-1', 'algebra-2', 'geometry', 'precalc', 'calculus', 'statistics']
-
-
-
 var tags = [];
 var cards = [];
 
