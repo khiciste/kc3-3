@@ -62,8 +62,6 @@ $(document).ready(function() {
         // hide all first
         allQuotes.css({"display": "none"});
         tag.css({"display": "block"});
-            // keep the template hidden
-            $("#quote-___").css({ "display": "none" });
     }
 
     
